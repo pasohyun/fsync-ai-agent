@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F-Sync Comment Schema",
+  "description": "유튜브 댓글 수집 공통 스키마 — 팀 전원 준수",
+  "type": "object",
+  "required": [
+    "video_id", "video_type", "video_title", "video_published_at",
+    "artist", "label", "purpose",
+    "comment_id", "text", "likes", "published_at", "crawled_at"
+  ],
+  "properties": {
+    "video_id":           { "type": "string", "description": "YouTube video ID" },
+    "video_type":         { "type": "string", "enum": ["MV", "teaser", "fancam", "behind", "live"] },
+    "video_title":        { "type": "string" },
+    "video_published_at": { "type": ["string", "null"], "format": "date-time", "description": "ISO 8601" },
+    "artist":             { "type": "string", "description": "예: 엔시티위시, 엔플라잉" },
+    "label":              { "type": "string", "enum": ["cute", "fresh", "hip", "sexy", "emotional", "powerful", "dark", "other"] },
+    "purpose":            { "type": "string", "enum": ["train", "gap_target"] },
+    "comment_id":         { "type": "string" },
+    "text":               { "type": "string", "minLength": 1 },
+    "likes":              { "type": "integer", "minimum": 0 },
+    "published_at":       { "type": "string", "format": "date-time", "description": "ISO 8601" },
+    "crawled_at":         { "type": "string", "format": "date-time", "description": "ISO 8601" }
+  }
+}
