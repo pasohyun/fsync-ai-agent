@@ -1,28 +1,32 @@
-# API 키 — 절대 커밋 금지
+# 데이터 파일 (Google Drive에 저장됨)
+data/
+*.jsonl
+
+# 런타임 상태
+crawler/quota_usage.json
+__pycache__/
+*.pyc
+.DS_Store
+
+# 환경 — 절대 커밋 금지
 .env
 *.env
 config/api_keys.py
 
-# 데이터 원본 — 용량 문제로 제외
-data/raw/
-
-# 학습된 모델 — 용량 문제로 제외
-outputs/models/*.bin
-outputs/models/*.pt
-outputs/models/*.ckpt
-
 # Python
-__pycache__/
-*.pyc
 *.pyo
 .venv/
 venv/
 *.egg-info/
 
-# OS
-.DS_Store
-Thumbs.db
-
 # IDE
 .vscode/
 .idea/
+
+# 모델 가중치 — 용량 문제로 제외
+outputs/models/*.bin
+outputs/models/*.pt
+outputs/models/*.ckpt
+
+# 노트북
+*.ipynb_checkpoints/
