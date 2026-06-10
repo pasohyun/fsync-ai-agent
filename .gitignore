@@ -30,3 +30,12 @@ outputs/models/*.ckpt
 
 # 노트북
 *.ipynb_checkpoints/
+
+# 발표자료 (Google Drive 보관, repo 제외)
+presentation/
+
+# hip 크롤러 구버전 (v2로 대체)
+src/crawlers/hip/hip_crawler.ipynb
+
+# Claude Code 로컬 지침 (repo 제외)
+CLAUDE.md
