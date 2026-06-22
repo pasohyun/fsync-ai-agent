@@ -1,0 +1,333 @@
+{
+  "release": "oktapbang",
+  "album_title": "N.Flying FLY HIGH PROJECT #2 '옥탑방' (Rooftop)",
+  "release_date": "2019-01-02",
+  "source_docs": [
+    "oktapbang/kihoek",
+    "oktapbang/report"
+  ],
+  "core_intent": "'아이돌'이 아닌 자작곡 기반 '아티스트적 이미지'와 자유롭게 자연스러운 인디 밴드 같은 정체성을 핵심으로, 빈티지하고 힘든 감성의 러프·자유분방한 비주얼 컨셉포토와 '옥탑방=아지트'라는 공간 메타포를 직관적 소품(창문)으로 형상화하려는 컴백 기획. 발매 전 의상 스포일러·10초 인터뷰 등 티징으로 기대감을 쌓는 사전 프로모션을 포함.",
+  "page_classification": [
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 1,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 2,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 3,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 4,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 5,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/kihoek",
+      "page": 6,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 1,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 2,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 3,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 4,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 5,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 6,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 7,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 8,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 9,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 10,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 11,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 12,
+      "class": "기획"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 13,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 14,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 15,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 16,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 17,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 18,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 19,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 20,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 21,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 22,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 23,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 24,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 25,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 26,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 27,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 28,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 29,
+      "class": "사후"
+    },
+    {
+      "doc": "oktapbang/report",
+      "page": 30,
+      "class": "사후"
+    }
+  ],
+  "intended_label_profile": {
+    "밴드_정체성": {
+      "level": "high",
+      "rationale": "기획방향(report p3)에서 '아이돌'이 아닌 자작곡 기반 아티스트적 이미지, 그리고 '회사의 기획에 의해 꾸며진 아이돌이 아닌 자유롭게 자연스러운 인디 밴드 같은 이미지'를 핵심 지향으로 명시. 밴드 형식·정체성 자체를 컴백 콘셉트의 중심축으로 강조하므로 high 유지. 단 인용문이 원문과 달라 교정함.",
+      "evidence": {
+        "doc": "oktapbang/report",
+        "page": 3,
+        "quote": "회사의 기획에 의해 꾸며진 아이돌이 아닌 자유롭게 자연스러운 인디 밴드 같은 이미지를 강조"
+      }
+    },
+    "연주_악기": {
+      "level": "none",
+      "rationale": "기획 페이지에서 특정 악기나 연주 실력을 구체적으로 부각하려는 서술이 없음. 컨셉포토·MV에 밴드 합주/연주 장면 이미지는 있으나 악기·연주력을 의도적으로 강조한 문구는 부재. 통과(변경 없음).",
+      "evidence": null
+    },
+    "보컬_라이브": {
+      "level": "none",
+      "rationale": "기획 페이지에 가창력·음색·라이브 역량을 부각하려는 명시적 의도 서술이 없음. (VLIVE 루프탑 라이브 등 라이브 콘텐츠 언급은 모두 사후 프로모션 실행 일정.) 통과(변경 없음).",
+      "evidence": null
+    },
+    "음악성": {
+      "level": "medium",
+      "rationale": "자작곡(#자작곡) 기반 아티스트적 이미지와 '옥탑방' 신곡 자체를 직관적으로 표현하려는 의도가 있으나, 더 구체적인 밴드_정체성 쪽으로 설명되는 부분이 많아 잔여 카테고리로 medium 유지. 인용 페이지(report p3)는 기획 섹션으로 확인됨. 통과(변경 없음).",
+      "evidence": {
+        "doc": "oktapbang/report",
+        "page": 3,
+        "quote": "N.Flying 그룹 이미지, 포지셔닝 컨셉 #마이웨이 #아티스트 #자작곡"
+      }
+    },
+    "비주얼_멤버매력": {
+      "level": "high",
+      "rationale": "비주얼 컨셉(report p7, 컨셉포토)에서 '빈티지하고 힘든 감성을 토대로 러프하고 자유분방한 모습을 연출'을 명시. 의상 컨셉·컨셉포토·활동의상 페이지가 다수(report p5~p8)로 멤버 비주얼/스타일 매력 부각이 핵심. 인용문 원문 일치 확인, 기획 섹션. 통과(변경 없음).",
+      "evidence": {
+        "doc": "oktapbang/report",
+        "page": 7,
+        "quote": "빈티지하고 힘든 감성을 토대로 러프하고 자유분방한 모습을 연출"
+      }
+    },
+    "이별_감성": {
+      "level": "none",
+      "rationale": "1차는 report p7 '빈티지하고 힘든 감성' 인용으로 low를 주었으나, 해당 문구는 컨셉포토의 비주얼/스타일 무드 서술이며 이별·상실 정서와 무관. 기획서 전체(타이틀 '옥탑방'=아지트 공간 메타포)에 이별·상실 컨셉 서술이 전혀 없음. GUIDE '컨셉이 이별과 무관하면 none' 적용. 비주얼_멤버매력 인용을 이별로 이중 귀속한 확증편향이므로 none, evidence null로 정정.",
+      "evidence": null
+    },
+    "위로_공감": {
+      "level": "none",
+      "rationale": "곡으로 위로·치유·공감을 주려는 의도 서술이 기획 페이지에 없음. 통과(변경 없음).",
+      "evidence": null
+    },
+    "청량_여름": {
+      "level": "none",
+      "rationale": "시원·청량·경쾌한 느낌을 의도한 서술 없음. 오히려 빈티지·심플하지만 너무 빈티지하지 않은 어두운/모던 무드(report p9)를 지향하여 청량 콘셉트와 무관. 통과(변경 없음).",
+      "evidence": null
+    },
+    "신규_유입": {
+      "level": "none",
+      "rationale": "1차는 kihoek p2 '재미요소 가미' 인용으로 medium을 주었으나, 해당 문구는 '10초 인터뷰' 콘텐츠를 재미있게 만들기 위한 내부 규칙(멤버 간 내용 겹침 방지 등)이지 회사 입장의 대중 타겟팅·신규 팬 유입 전략이 아님. 기획서에 광고·바이럴·대중 노출 확대를 통한 신규 유입 전략 서술이 명확히 없음(CGV 영화 홍보 영상은 멤버 개인 영화 홍보 링크). GUIDE 신규_유입 정의(회사 타겟팅 전략) 미충족으로 none, evidence null로 정정.",
+      "evidence": null
+    },
+    "장기_팬덤": {
+      "level": "none",
+      "rationale": "1차 인용(kihoek p5 '팬심외 부재로 생기는 소통과 진정성의 한계를 상쇄...')은 페이지 헤더가 명시적으로 '사후 프로모션'인 허준 그리팅 팬 이벤트 실행 계획에서 나온 것. 사후 섹션 출처이며 팬덤 결속/소속감 강화의 사전 기획 의도로 보기 어려움. 검증 규칙(사후 출처 → 제외) 적용하여 none, evidence null로 정정.",
+      "evidence": null
+    },
+    "역주행_기대": {
+      "level": "none",
+      "rationale": "1차는 kihoek p2 '멤버 간 내용이 겹쳐야 하는 안비밀, 새로운 정보와 소개를 제공' 인용으로 low를 주었으나, 이는 10초 인터뷰 콘텐츠의 내부 게임 규칙일 뿐 대중 흥행 유도·이슈화 전략이 아님. GUIDE '명확한 흥행 유도 전략일 때만' 미충족. 막연한 채움으로 판단해 none, evidence null로 정정.",
+      "evidence": null
+    },
+    "기타_노이즈": "not_applicable"
+  },
+  "extra_intent_outside_12label": [
+    {
+      "theme": "상징물(창문/옥탑방)의 직관적 형상화 — 단어를 시각적 소품으로 번역",
+      "rationale": "'옥탑방'이라는 단어를 '창문' 실물 소품으로 제작·활용해 직관적으로 보여주는, 12라벨로 포착되지 않는 상징·해석 중심 연출 의도. 비주얼 컨셉(report p7)·디자인(report p9)·MV에 반복. 인용 페이지는 기획 섹션, 원문 일치 확인.",
+      "evidence": {
+        "doc": "oktapbang/report",
+        "page": 9,
+        "quote": "‘옥탑방’을 직관적으로 표현할 수 있는 “창문”을 활용"
+      }
+    },
+    {
+      "theme": "티징·기대감 유발 — 스포일러형 콘텐츠로 호기심 자극",
+      "rationale": "의상 스포일러 이미지, 10초 인터뷰 등 발매 전 단서를 흘리며 '다음 앨범 컨셉을 유추할 수 있는' 티징으로 기대감을 쌓으려는 의도. 12라벨에 없는 티징 축. 인용 페이지(kihoek p2)는 '사전 프로모션' 섹션으로 기획 단계 의도이며 원문 일치 확인.",
+      "evidence": {
+        "doc": "oktapbang/kihoek",
+        "page": 2,
+        "quote": "신곡 ‘옥탑방’의 의상을 스포하여 다음 앨범 컨셉을 유추할 수 있는 스포일러 이미지"
+      }
+    },
+    {
+      "theme": "공간 메타포 — 아지트/옥탑방을 N.Flying만의 정체성 공간으로 의미화",
+      "rationale": "'옥탑방=아지트 같은 공간'으로 N.Flying만의 정체성을 담아내려는 해석적 의미 부여(앨범 네이밍 컨셉, report p4). 밴드_정체성과 인접하나 공간 상징 자체에 대한 해석적 의도라 별도 기록. 인용은 기획 섹션, 해시태그 원문 일치.",
+      "evidence": {
+        "doc": "oktapbang/report",
+        "page": 4,
+        "quote": "#옥탑방 #아지트"
+      }
+    }
+  ],
+  "extraction_audit": {
+    "excluded_pages_사후": [
+      "oktapbang/kihoek p4",
+      "oktapbang/kihoek p5",
+      "oktapbang/report p13",
+      "oktapbang/report p14",
+      "oktapbang/report p15",
+      "oktapbang/report p16",
+      "oktapbang/report p17",
+      "oktapbang/report p18",
+      "oktapbang/report p19",
+      "oktapbang/report p20",
+      "oktapbang/report p21",
+      "oktapbang/report p22",
+      "oktapbang/report p23",
+      "oktapbang/report p24",
+      "oktapbang/report p25",
+      "oktapbang/report p26",
+      "oktapbang/report p27",
+      "oktapbang/report p28",
+      "oktapbang/report p29",
+      "oktapbang/report p30"
+    ],
+    "excluded_pages_사유": "발매 후 실행/결과 보고에 해당하는 페이지는 의도 추출 대상에서 제외. report p13~p30은 '4.프로모션(사후프로모션)' 실측 지표·조회수·차트·댓글 반응 및 '5.발매 이슈/6.종합결과보고'로 사후 영역. kihoek 덱은 'PROMOTION IDEA'로 섹션 헤더가 '사전/사후 프로모션'으로 명시되어 있으며, kihoek p4(VLIVE 루프탑 라이브·회브리싱)·p5(리릭비디오·허준 그리팅 팬이벤트)는 헤더가 명시적으로 '사후 프로모션'이므로 의도 근거에서 제외함. (1차는 kihoek p4·p5를 '기획'으로 분류했으나 사후로 정정.)",
+    "ambiguous_cases": [
+      {
+        "page": "oktapbang/kihoek p6",
+        "reason": "'프로모션 예정 일정' 캘린더로 사전·사후 일정이 한 표에 혼재. 결과 보고가 아니라 발매 전 작성된 마스터 일정표(기획 산출물) 자체이므로 사후가 아님.",
+        "decision": "기획으로 분류 유지. 단 개별 일정 항목을 특정 라벨 근거로 채택하지는 않음."
+      },
+      {
+        "page": "oktapbang/report p12",
+        "reason": "'4.프로모션' 개요 페이지로 사전프로모션·사후프로모션 일정을 나란히 나열. 일부 사후 항목이 포함되나 페이지 성격은 발매 전 계획 일정 정리(기획 섹션 초입).",
+        "decision": "기획으로 분류 유지. 채택된 라벨 근거가 이 페이지에 의존하지 않으므로 영향 없음."
+      },
+      {
+        "page": "oktapbang/report p7",
+        "reason": "'빈티지하고 힘든 감성' 문구를 비주얼_멤버매력과 이별_감성 양쪽에 귀속할지 모호. 1차는 양쪽 모두에 사용(이중 귀속).",
+        "decision": "비주얼/스타일 무드 서술로 판단하여 비주얼_멤버매력에만 귀속(high 유지), 이별_감성에서는 제외(none). 기획서에 이별·상실 컨셉이 전무함이 결정 근거."
+      }
+    ]
+  }
+}

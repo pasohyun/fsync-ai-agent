@@ -1,0 +1,332 @@
+{
+  "release": "negane",
+  "change_log": [
+    {
+      "target": "intended_label_profile.청량_여름.evidence.quote",
+      "change": "'시원한 국내 계절감을 반영하여 바다를 배경으로 립+이미지 비디오 제작' → '시원한 곡의 계절감을 반영하여 바다를 배경으로 립+이미지 비디오 제작'",
+      "reason": "원문(kihoek p3 / report p7) 확대 판독 결과 '국내'가 아니라 '곡의'임. 1차 오독 quote 교정. level high는 다른 청량 근거로도 충분히 유지."
+    },
+    {
+      "target": "intended_label_profile.비주얼_멤버매력.level / evidence",
+      "change": "level low → none, evidence(kihoek p3 '엔플라잉의 여름 낮 청춘, 청량 무드 표현') → null",
+      "reason": "해당 문장은 멤버 외모·매력 부각이 아니라 청량 무드 연출 의도라 GUIDE의 비주얼_멤버매력 정의에 부합하지 않음. 스타일링/비하인드 페이지(report p9~p10)도 실행 사진일 뿐 명시적 멤버매력 부각 의도 서술 없음. 확증편향 귀속으로 정정."
+    },
+    {
+      "target": "intended_label_profile.위로_공감.level / evidence",
+      "change": "level low → none, evidence(kihoek p2 '메말랐던 내 삶의 의미가 됐다') → null",
+      "reason": "가사 인용일 뿐 위로·치유·공감대 형성을 주려는 기획 의도 서술이 아님. 컨셉은 설렘·경쾌한 고백으로 GUIDE가 요구하는 '감동/공감대 형성' 류 명시 의도가 기획 섹션에 부재. 확증편향 귀속으로 정정."
+    },
+    {
+      "target": "intended_label_profile.신규_유입.level / evidence",
+      "change": "level medium → low, evidence(kihoek p6 'Air Drop 컨셉의 발매 포스터') → kihoek p7 '1theK 야외녹음실 오픈 (6PM)'",
+      "reason": "1차 evidence는 티저 포스터로 신규 유입 타겟팅과 무관한 오귀속. 실제 타겟팅·광고 전략(F18-34, 쇼츠 바이럴, 제휴)은 모두 [사후] report p11~p12에만 존재해 의도 근거 불가. 기획 섹션의 대중 채널 노출 계획(1theK)으로만 약하게 성립해 low 하향 및 evidence 교체."
+    },
+    {
+      "target": "intended_label_profile.장기_팬덤.evidence.quote",
+      "change": "evidence(kihoek p5 '온라인커버 공개') → kihoek p5 '발매 직전 팬덤 관심 붐업'",
+      "reason": "1차 quote는 단순 행위 명칭이라 팬덤 결속 의도를 직접 드러내지 못함. 동일 페이지의 의도 명시 문구 '발매 직전 팬덤 관심 붐업'으로 교체(level medium 유지)."
+    },
+    {
+      "target": "extra_intent_outside_12label[0] (티징·기대감 유도).evidence",
+      "change": "evidence(kihoek p6 '★국 명 공개 (멤버의 추후 무드)') → kihoek p5 '곡 명 미공개', theme 문구를 단계적 공개로 정리",
+      "reason": "1차 quote는 OCR 손상 인용('★곡 명 공개'의 오인식)이라 그대로 채택 불가. 동일 티징 의도가 깨끗하게 적힌 사전프로모션 단계 문구 '곡 명 미공개'로 교체."
+    }
+  ],
+  "first_pass": {
+    "release": "negane",
+    "album_title": "네가 내 마음에 자리 잡았다 (Into You)",
+    "release_date": "2024-06-25",
+    "source_docs": [
+      "negane/kihoek (기획안, p01-p08, 기획 페이지: p01-p07)",
+      "negane/report (발매보고서, p01-p17, 기획 페이지: p01-p10, 사후 페이지: p11-p17)"
+    ],
+    "core_intent": "어느 날 바람처럼 마음에 스며든 사랑에 대한 경쾌한 고백을 청량하고 시원한 여름 무드로 전하는 미디엄 템포 팝 록 곡. '기분 좋은 설렘'을 핵심 정서로 삼고, 바다·여름·청춘을 배경으로 한 청량 이미지와 감성적 기타·휘파람·청량한 보컬을 부각하며, 밴드 아이덴티티(다양한 방식의 청춘·기억을 이야기하는 밴드)를 강화하려는 의도. 사전 프로모션(곡명 미공개 티징, Air Drop 포스터, 달력 D-4 포스터, 온라인커버 공개)으로 발매 직전 팬덤 관심을 붐업하고, 대규모 온라인 바이럴·광고로 대중 노출을 확대하려는 전략.",
+    "page_classification": [
+      {
+        "doc": "negane/kihoek",
+        "page": 1,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 2,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 3,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 4,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 5,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 6,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 7,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/kihoek",
+        "page": 8,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 1,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 2,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 3,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 4,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 5,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 6,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 7,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 8,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 9,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 10,
+        "class": "기획"
+      },
+      {
+        "doc": "negane/report",
+        "page": 11,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 12,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 13,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 14,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 15,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 16,
+        "class": "사후"
+      },
+      {
+        "doc": "negane/report",
+        "page": 17,
+        "class": "사후"
+      }
+    ],
+    "intended_label_profile": {
+      "밴드_정체성": {
+        "level": "medium",
+        "rationale": "스페셜클립 기획에서 '다양한 방식의 청춘과 기억을 이야기하는 밴드로 아이덴티티 강화'를 명시해 밴드 정체성 자체를 지향 대상으로 삼았다. 다만 곡 컨셉의 핵심은 청량/설렘 정서이고 밴드 정체성은 부수적 강화 포인트라 medium.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 3,
+          "quote": "다양한 방식의 청춘과 기억을 이야기하는 밴드로 아이덴티티 강화"
+        }
+      },
+      "연주_악기": {
+        "level": "low",
+        "rationale": "타이틀곡 소개에 '감성적인 기타 라인과 휘파람 소리가 돋보이는'이라고 기타 사운드를 곡의 특징으로 언급하나, 멤버의 연주 실력 자체를 부각하려는 의도라기보다 곡 사운드 묘사에 가까워 약한 암시 수준.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 2,
+          "quote": "감성적인 기타 라인과 휘파람 소리가 돋보이는 미디엄 템포의 팝 록 장르 곡"
+        }
+      },
+      "보컬_라이브": {
+        "level": "medium",
+        "rationale": "'청량한 보컬의 조화가 기분 좋은 설렘을 전한다'며 보컬 음색을 곡 어필 포인트로 명시했고, 스페셜클립에서도 가창과 결부된 청량 이미지를 강조. 라이브/공연 역량 부각보다는 음색 어필이라 medium.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 2,
+          "quote": "청량한 보컬의 조화가 기분 좋은 설렘을 전한다"
+        }
+      },
+      "음악성": {
+        "level": "low",
+        "rationale": "'미디엄 템포의 팝 록 장르 곡'으로 곡 자체의 장르·완성도를 소개하나, 핵심 어필은 청량_여름·보컬·기타 등 더 구체적 라벨로 흡수됨. 잔여 카테고리로서 약하게만 성립.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 2,
+          "quote": "감성적인 기타 라인과 휘파람 소리가 돋보이는 미디엄 템포의 팝 록 장르 곡"
+        }
+      },
+      "비주얼_멤버매력": {
+        "level": "low",
+        "rationale": "스페셜클립·뮤직뱅크 스타일링에서 멤버 비주얼이 활용되나 기획 의도 서술은 청량 무드·여름 청춘 연출에 집중. 멤버 외모·매력 자체를 부각하려는 명시적 문장은 약해 low.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 3,
+          "quote": "엔플라잉의 여름 낮 청춘, 청량 무드 표현"
+        }
+      },
+      "이별_감성": {
+        "level": "none",
+        "rationale": "컨셉이 '마음에 스며든 사랑에 대한 경쾌한 고백', '기분 좋은 설렘'으로 이별·상실과 무관. 근거 없음.",
+        "evidence": null
+      },
+      "위로_공감": {
+        "level": "low",
+        "rationale": "'메말랐던 내 삶의 의미가 됐다' 등 가사가 위로적 정서를 내포하나 기획 의도는 위로·치유보다 설렘·고백에 있음. 명시적 위로/공감 형성 전략 문구는 없어 약한 암시 수준.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 2,
+          "quote": "메말랐던 내 삶의 의미가 됐다"
+        }
+      },
+      "청량_여름": {
+        "level": "high",
+        "rationale": "곡 컨셉의 최핵심 축. '경쾌한 고백', '청량한 보컬', 스페셜클립의 '시원한 국내 계절감 반영', '여름 낮 청춘, 청량 무드 표현', '시원한 바람처럼 내게 불어와' 등 청량/시원/경쾌 의도가 반복·핵심 강조됨.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 3,
+          "quote": "시원한 국내 계절감을 반영하여 바다를 배경으로 립+이미지 비디오 제작"
+        }
+      },
+      "신규_유입": {
+        "level": "medium",
+        "rationale": "회사 관점 타겟팅 전략으로, 대규모 온라인 광고·쇼츠 바이럴배포(F18-34 타겟, 총 17건/20건 등)와 1theK·인스타 매거진 제휴 콘텐츠로 대중 노출 확대를 기획. 다만 광고 집행 수치 일부는 사후 페이지라 기획 서술 근거만 채택해 medium.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 6,
+          "quote": "발매를 예고하는 Air Drop 컨셉의 발매 포스터"
+        }
+      },
+      "장기_팬덤": {
+        "level": "medium",
+        "rationale": "사전 프로모션이 '발매 직전 팬덤 관심 붐업'을 명시하고, 곡명 미공개 티징·온라인커버 선공개로 기존 팬덤의 기대·결속을 끌어올리려는 의도. 팬사인회·팬덤 전용 이미지 활용 계획도 결속 강화 지향.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 5,
+          "quote": "온라인커버 공개"
+        }
+      },
+      "역주행_기대": {
+        "level": "low",
+        "rationale": "직접적 흥행/역주행 문구는 없으나, 콘서트 선공개곡 발매 예고·곡명 미공개 티징으로 대중 흥미·이슈화를 유도하려는 전략이 약하게 읽힘. 명확한 흥행 유도 전략 서술은 제한적이라 low.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 5,
+          "quote": "콘서트 선공개곡 발매 예고"
+        }
+      }
+    },
+    "extra_intent_outside_12label": [
+      {
+        "theme": "티징·기대감 유도 (곡명 미공개 단계적 공개)",
+        "rationale": "발매 포스터 단계에서 곡명을 일부러 공개하지 않고, 달력 D-4 포스터로 발매일만 공개하는 등 단계적 정보 노출로 호기심·기대감을 증폭시키려는 의도. 12라벨의 흥행/팬덤과 부분 겹치나 '티징 그 자체'의 재미는 별도 의도.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 6,
+          "quote": "★국 명 공개 (멤버의 추후 무드)"
+        }
+      },
+      {
+        "theme": "상징·해석 재미 (하트 그래픽으로 마음의 동요·리듬감 시각화)",
+        "rationale": "온라인커버를 '사랑' 감정의 하트 그래픽과 '마음의 동요'·곡의 '리듬감'을 터지는 모션 일러스트로 시각화해, 곡의 정서를 직관적·상징적으로 해석하게 만드는 비주얼 의도. 12라벨로는 포착되지 않는 상징적 표현 의도.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 4,
+          "quote": "갑자기 찾아온 '마음의 동요'와 곡의 '리듬감'을 터지는 모션의 일러스트로 표현"
+        }
+      },
+      {
+        "theme": "Air Drop·OS UI 패러디 컨셉 (유머·트렌디 코드)",
+        "rationale": "발매 포스터를 스마트폰 Air Drop 공유 알림('Into You would like to share a new song / Decline · Accept') UI로 패러디해 트렌디하고 위트있는 방식으로 발매를 예고. 청량/팬덤과 다른 유머·디지털 트렌드 차용 의도.",
+        "evidence": {
+          "doc": "negane/kihoek",
+          "page": 6,
+          "quote": "발매를 예고하는 Air Drop 컨셉의 발매 포스터"
+        }
+      }
+    ],
+    "extraction_audit": {
+      "excluded_pages_사후": [
+        "negane/report p11 (콘텐츠 업로드 일자·8/14 조회수 등 사후 성과)",
+        "negane/report p12 (온라인 광고 리포트: 노출수·조회수·CPV·비용 집행 실적)",
+        "negane/report p13 (쇼츠/아이돌이슈 바이럴배포 업로드 링크·집행 실적)",
+        "negane/report p14 (팬사인회 진행 결과·응모/대면 인원)",
+        "negane/report p15 (팬사인회 판매량·정산액 결과)",
+        "negane/report p16 (멜론 차트 최고순위 32위 기록·주요 반응 통계)",
+        "negane/report p17 (E.O.D 엔딩 표지)"
+      ],
+      "excluded_pages_사유": "report p11-p17은 발매 후 결과·성과(조회수, 광고 노출·집행 실적, 팬사인회 판매·정산, 차트 순위, 사후 주요 반응 통계)를 기록한 [사후] 페이지로, 기획 의도 근거에서 제외. 특히 p16 하단 '주요 반응' 박스는 발매 후 실제 대중·팬 반응 요약이라 의도 근거로 인용 금지. kihoek p08과 report p17은 EOD(엔딩) 표지로 내용 없음.",
+      "ambiguous_cases": [
+        {
+          "page": "report p01-p10",
+          "reason": "발매보고서 앞부분이지만 내용이 기획안(앨범정보·스페셜클립·온라인커버·포스터·뮤직쇼 스타일링·팬사인회 컨셉)을 그대로 재서술. 일정·컨셉 서술은 '~제작/표현/강화'형 기획 문장이라 [기획]으로 분류. 단 report p11부터 등장하는 조회수·정산은 사후로 절단.",
+          "decision": "p01-p10 기획으로 채택, p11부터 사후로 분리"
+        },
+        {
+          "page": "kihoek p06 / report p06-p07",
+          "reason": "발매 포스터 'Air Drop'·D-4 달력 포스터는 곡명 미공개 티징 전략이라 신규_유입·역주행·티징 의도가 혼재. 12라벨로 완전히 환원되지 않는 티징/유머 코드는 extra_intent로 분리 기록.",
+          "decision": "신규_유입·역주행은 약하게 채택, 티징·Air Drop 유머는 extra_intent로"
+        },
+        {
+          "page": "kihoek p03",
+          "reason": "'청량한 보컬'은 GUIDE상 보컬_라이브로 가는데 동시에 청량_여름 무드의 핵심이기도 해 중복 가능. 보컬 음색 언급은 보컬_라이브, 전반 무드·시원함은 청량_여름으로 분리 부여.",
+          "decision": "보컬_라이브(medium)와 청량_여름(high) 양쪽 부여, 청량을 핵심으로"
+        },
+        {
+          "page": "kihoek p02",
+          "reason": "'감성적인 기타 라인'을 연주_악기로 볼지 음악성으로 볼지 모호. 멤버 연주 실력 부각보다 곡 사운드 묘사라 연주_악기 low + 음악성 low로 약하게 처리.",
+          "decision": "연주_악기 low, 음악성 low"
+        }
+      ]
+    }
+  }
+}

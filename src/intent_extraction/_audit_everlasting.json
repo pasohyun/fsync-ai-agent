@@ -1,0 +1,497 @@
+{
+  "release": "everlasting",
+  "change_log": [
+    {
+      "target": "intended_label_profile.이별_감성",
+      "change": "level medium→none, evidence(kihoek p2, '시간의 흐름·차분한 블루톤·시간의 흐름')를 null로 제거하고 rationale 전면 교체",
+      "reason": "허위 인용: kihoek p02는 텍스트 없는 'Concept Photo' 표지로 인용문이 실재하지 않음. 실제 Last 컨셉(kihoek p03/p07)의 정서는 '지나온 시간·영원·새벽빛이 새로운 희망을 밝힌다'로 이별·상실 이입 의도가 아니므로 GUIDE '컨셉이 이별과 무관하면 none' 적용."
+    },
+    {
+      "target": "intended_label_profile.역주행_기대.evidence.quote",
+      "change": "'발매 관련 이슈화 및 대중 노출 극대화' → '오프라인 공연을 통한 발매 관련 이슈화 및 대중 노출 극대화'",
+      "reason": "report p20 원문 대조 결과 인용문 앞부분 '오프라인 공연을 통한'이 누락되어 있어 원문대로 교정. level medium은 정당(대중 노출·이슈화 전략 실재)하여 유지."
+    },
+    {
+      "target": "intended_label_profile.장기_팬덤.evidence.quote",
+      "change": "'시간이 흐러도 변치 않는 ‘영원’의 메시지를 전달하며 그룹/팬덤 결속 강화' → '시간이 흘러도 변치 않는 ‘영원’의 메시지를 전달하며 그룹/팬덤 결속 강화'",
+      "reason": "report p03 원문 대조 결과 1차 인용의 오타 '흐러도'를 원문 '흘러도'로 교정. level high 유지."
+    },
+    {
+      "target": "intended_label_profile.장기_팬덤.rationale",
+      "change": "팬덤 약속 근거 페이지 참조 'kihoek p13'을 'kihoek p10·p05'로 교정",
+      "reason": "kihoek p13은 'MV' 표지 페이지로 텍스트가 없음. 팬덤 약속('변치 않을 것임을 약속하겠다는 낭만적인 메시지')은 kihoek p10(앨범명/버전명)·p05(컨셉)에 존재."
+    },
+    {
+      "target": "intended_label_profile.신규_유입.rationale 및 비주얼_멤버매력.rationale",
+      "change": "근거 페이지 정합성 보강 — 신규_유입에 OOH 옥외광고(report p19) 추가, 비주얼_멤버매력에 컨셉포토 실제 페이지(kihoek p04 A ver. Ever, p07 B ver. Last) 명시",
+      "reason": "원본 대조 시 1차의 'A ver.(수트)·B ver.(다크)' 서술이 kihoek p04/p07과 일치함을 확인하여 정확한 페이지로 보강. level(medium) 변경 없음."
+    },
+    {
+      "target": "extraction_audit",
+      "change": "ambiguous_cases에 이별_감성 허위인용·역주행_기대 혼재페이지·장기_팬덤 p13 오참조 3건 신규 기록, excluded_pages_사유에 report p20 혼재 처리 명시",
+      "reason": "2차 검증에서 발견한 인용 정합성 문제와 사후/기획 혼재 페이지의 근거 채택 범위를 감사 기록으로 명문화."
+    }
+  ],
+  "first_pass": {
+    "release": "everlasting",
+    "album_title": "Everlasting (정규 2집)",
+    "release_date": "2025-05-28",
+    "source_docs": [
+      "everlasting/kihoek (컨셉기획안, 전 20p 기획): p01-p20",
+      "everlasting/report (발매보고서): 기획 페이지 p01-p15, p18-p32(상단 목적·내용·MESSAGE); 사후 페이지 p16-p17, p33-p37"
+    ],
+    "core_intent": "정규 2집 'Everlasting'은 '영원한, 변치 않는'을 핵심 키워드로, 데뷔 10주년을 맞아 (1) '믿고 듣는 실력파 밴드'로의 도약·아티스트적 성숙을 각인하고, (2) 시간이 흘러도 변치 않겠다는 '영원'의 메시지로 팬덤(엔피아)과의 결속을 강화하려는 의도가 핵심이다. Ever(언제나/항상)·Last(지난/마지막으로) 두 컨셉으로 시간의 흐름과 변치 않음을 시각화하고, 담백한 드라마타이즈 MV·성숙한 수트핏 비주얼로 전개하며, 악기 사운드 강조 숏폼·온라인 광고·바이럴로 음원 유입과 대중 이슈화를 함께 노린다.",
+    "page_classification": [
+      {
+        "doc": "everlasting/kihoek",
+        "page": 1,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 2,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 3,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 4,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 5,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 6,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 7,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 8,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 9,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 10,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 11,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 12,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 13,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 14,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 15,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 16,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 17,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 18,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 19,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/kihoek",
+        "page": 20,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 1,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 2,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 3,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 4,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 5,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 6,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 7,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 8,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 9,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 10,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 11,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 12,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 13,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 14,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 15,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 16,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 17,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 18,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 19,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 20,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 21,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 22,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 23,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 24,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 25,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 26,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 27,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 28,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 29,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 30,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 31,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 32,
+        "class": "기획"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 33,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 34,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 35,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 36,
+        "class": "사후"
+      },
+      {
+        "doc": "everlasting/report",
+        "page": 37,
+        "class": "사후"
+      }
+    ],
+    "intended_label_profile": {
+      "밴드_정체성": {
+        "level": "high",
+        "rationale": "앨범 기획의 핵심 축이 '밴드로서의 정체성 강화'. report p03 음악적 방향성에서 '기존의 유쾌함과 공감을 넘어, ‘믿고 듣는’ 실력파 밴드로 도약'이라며 밴드 형식·실력 자체를 지향. report p26도 '밴드의 특성을 살린 콘텐츠'를 다수 언급. '밴드'가 단순 호칭이 아니라 정체성·합주 지향으로 반복 강조되어 high.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "기존의 유쾌함과 공감을 넘어, ‘믿고 듣는’ 실력파 밴드로 도약"
+        }
+      },
+      "연주_악기": {
+        "level": "medium",
+        "rationale": "report p26 악기별 쇼폼 기획에서 '악기별 사운드를 강조한 콘텐츠로 음원 유입 유도'를 명시하고, 간주(이승협)·기타(차훈)·드럼(김재현)·기타(유회승)·베이스(서동성) 멤버별 악기 사운드를 개별 플레이로 부각하려는 의도가 있음. 단순 멤버 소개용 악기 호명을 넘어 연주·사운드 강조이므로 medium.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 26,
+          "quote": "악기별 사운드를 강조한 콘텐츠로 음원 유입 유도"
+        }
+      },
+      "보컬_라이브": {
+        "level": "medium",
+        "rationale": "발매 프로모션으로 스페셜 라이브(N.Flying Special Live Everlasting)·합주실 라이브 콘텐츠를 기획해 라이브 공연 역량을 전면에 내세운다. report p20 '스페셜 라이브 진행', report p26 '합주실 라이브 콘텐츠를 통한 … 음원 유입 유도'. 다만 가창력·음색 자체를 직접 부각하는 서술은 약해 medium.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 26,
+          "quote": "합주실 라이브 콘텐츠를 통한 아티스트 발매 이슈화 및 음원 유입 유도"
+        }
+      },
+      "음악성": {
+        "level": "medium",
+        "rationale": "곡 자체의 완성도·성숙함을 어필하려는 의도가 report p03 '10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인'으로 나타남. 다만 GUIDE상 밴드_정체성·연주_악기가 더 구체적이므로 잔여 카테고리로서의 '성숙한 음악' 언급만 medium.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인"
+        }
+      },
+      "비주얼_멤버매력": {
+        "level": "medium",
+        "rationale": "컴백 키 비주얼·컨셉포토를 '성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지'로 기획(report p03)하고, A ver.(수트·담백한 분위기)·B ver.(다크한 성숙한 무드) 컨셉포토로 멤버 스타일·매력을 연출. 단순 멤버 소개를 넘어 성숙한 키 비주얼 표현 의도가 있으나 핵심은 아니므로 medium.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지"
+        }
+      },
+      "이별_감성": {
+        "level": "low",
+        "rationale": "앨범의 핵심 정서는 '변치 않음·영원'이지만, Last(지난, 마지막으로) 컨셉의 타이틀 '만년설' 및 Last 컨셉포토 설명의 '차분한 톤·시간의 담긴 리트로우 공간' 등에서 지나간 시간·그리움의 정서가 약하게 암시됨. 직접적 이별·상실 이입 의도는 부차적이라 low.",
+        "evidence": {
+          "doc": "everlasting/kihoek",
+          "page": 2,
+          "quote": "시간의 흐름·차분한 블루톤·시간의 흐름"
+        }
+      },
+      "위로_공감": {
+        "level": "low",
+        "rationale": "report p03 음악적 방향성에 '기존의 유쾌함과 공감을 넘어'라는 표현이 있어 공감 정서가 브랜드의 기존 자산으로 언급되나, 이번 앨범의 적극적 '위로·치유·공감 제공' 의도로 볼 명시 근거는 약하다(오히려 '넘어'라며 다음 단계로 이동을 제시). 따라서 low.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "기존의 유쾌함과 공감을 넘어, ‘믿고 듣는’ 실력파 밴드로 도약"
+        }
+      },
+      "청량_여름": {
+        "level": "none",
+        "rationale": "앨범 컨셉은 '영원·변치 않음', 담백한 드라마타이즈·수트핏·필름 감성으로, 청량·시원·경쿾한 느낌을 주려는 의도 근거가 기획 페이지에 없음. 컴백 활동 의상(파스텔·핑크)이 밝긴 하나 계절·청량 컴셉으로 명시되지 않아 none.",
+        "evidence": null
+      },
+      "신규_유입": {
+        "level": "medium",
+        "rationale": "회사 관점 타겟팅·대중 노출 확대 전략이 다수 기획됨. report p26 쇼폼 '음원 유입 유도', report p20 스페셜라이브 '대중 노출 극대화', 온라인 광고·바이럴·플레이리스트 협업으로 신규 대중 노출 확대를 꽀. 1인칭 체험 표현은 없으나 회사 관점 유입 전략으로 변환 가능해 medium.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 26,
+          "quote": "악기별 사운드를 강조한 콘텐츠로 음원 유입 유도"
+        }
+      },
+      "장기_팬덤": {
+        "level": "high",
+        "rationale": "앨범명 Everlasting 자체가 팬덤(엔피아)에게 변치 않을 것을 약속하는 메시지(kihoek p13, report p05). report p03도 '시간이 흐러도 변치 않는 ‘영원’의 메시지를 전달하며 그룹/팬덤 결속 강화'를 명시. 팬덤 결속·변치 않는 약속이 핵심 메시지라 high.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "시간이 흐러도 변치 않는 ‘영원’의 메시지를 전달하며 그룹/팬덤 결속 강화"
+        }
+      },
+      "역주행_기대": {
+        "level": "medium",
+        "rationale": "직접 '역주행 기대' 문구는 없으나, '발매 관련 이슈화 및 대중 노출 극대화'(report p20), '대중의 관심 유도하는 프로모션'(오프라인 포스터) 등 대중적 흥미 유도·이슈화 전략이 분명히 존재. 명확한 흥행·대중 이슈화 유도 전략으로 medium 부여.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 20,
+          "quote": "발매 관련 이슈화 및 대중 노출 극대화"
+        }
+      }
+    },
+    "extra_intent_outside_12label": [
+      {
+        "theme": "상징·해석 (10주년 로고의 의미 부여)",
+        "rationale": "'5개의 원이 하나로 완성된다'는 10주년 기념 로고와 '만년설(Everlasting)' 타이틀 로고, 지붕 위 쌓인 눈으로 '만년설'의 상징성을 표현하는 등, 멤버 5명·영원·만년설을 잇는 상징적 의미 부여와 해석 재미를 의도. 12라벨로 환원되지 않는 상징·해석 코드.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "10주년 기념 로고 활용 (5개의 원이 하나로 완성된다는 의미)"
+        }
+      },
+      {
+        "theme": "10년 서사·기념(데뷔 10주년 시점성)",
+        "rationale": "'5명이 함께해 온 10년, 그리고 엔플라잉의 넥스트 10년'이라는 데뷔 10주년 서사를 앨범 전체의 프레임으로 삼음. 밴드 정체성·팬덤 결속과 겹치나, '데뷔 10주년 기념·다음 10년'이라는 시점성·서사성 자체는 12라벨로 온전히 포착되지 않는 메타 메시지.",
+        "evidence": {
+          "doc": "everlasting/report",
+          "page": 3,
+          "quote": "5명이 함께해 온 10년, 그리고 엔플라잉의 넥스트 10년"
+        }
+      },
+      {
+        "theme": "스토리텔링·드라마타이즈 감상 (소년 서사 MV)",
+        "rationale": "MV를 '소년 배우 주연으로 스토리텔링, 한 사람의 서사 위주로 담백하고 아름다운 이미지'의 담백한 드라마타이즈 형식으로 기획. 곡·밴드 자체보다 영상 서사를 통한 정서적 몰입·감상 경험을 의도하는 부분으로, 12라벨 반응 축과 직접 대응하지 않음.",
+        "evidence": {
+          "doc": "everlasting/kihoek",
+          "page": 11,
+          "quote": "소년 배우 주연으로 스토리텔링. 한 사람의 서사 위주로"
+        }
+      }
+    ],
+    "extraction_audit": {
+      "excluded_pages_사후": [
+        "everlasting/report p16 (음악방송 의상/비주얼 관련 팬덤 반응 — 매우 긍정적, 재현 짧은 머리 호평 등 발매 후 반응)",
+        "everlasting/report p17 (음악방송 의상/비주얼 관련 SNS 댓글 캡처 — 발매 후 팬 반응)",
+        "everlasting/report p33 (종합 결과 보고서 — 음악방송 참여 인원 통계)",
+        "everlasting/report p34 (종합 결과 보고서 — SNS 수치, 목표 대비 증감)",
+        "everlasting/report p35 (종합 결과 보고서 — 음반 총 판매량 109,662장 등)",
+        "everlasting/report p36 (종합 결과 보고서 — 음반 주간 판매 추이)",
+        "everlasting/report p37 (종합 결과 보고서 — 음반 판매 국가/지역 분석)"
+      ],
+      "excluded_pages_사유": "p16~p17, p33~p37은 발매 후 결과·성과·반응 통계(조회수·판매량·참여 인원·SNS 수치·팬덤 반응 캡처)로, 기획사가 의도한 반응이 아니라 실제 결과이므로 제외. 또한 report p09~p11(컨셉포토/MV)의 우측 '주요 반응' 박스와 p20~p32 각 페이지 하단 컬러박스 '주요/분석 반응'(조회수·RT·긍정적 반응 등)도 사후 서술이므로 의도 근거로 인용하지 않았고, 해당 페이지의 상단 '목적/내용/MESSAGE/DIRECTION POINT'(컴백 전 기획 서술)만 의도 근거로 채택함.",
+      "ambiguous_cases": [
+        {
+          "page": "everlasting/report p09~p11, p20~p32",
+          "reason": "한 페이지 안에 상단=기획(목적·MESSAGE·콘텐츠 계획)과 하단/우측=사후(주요 반응·분석 결과·조회수)가 혼재.",
+          "decision": "페이지는 기획으로 분류하되, evidence는 상단 기획 서술 문장에서만 인용하고 사후 박스 문장은 배제"
+        },
+        {
+          "page": "everlasting/report p20 (스페셜 라이브)",
+          "reason": "상단 '목적: 오프라인 공연을 통한 발매 관련 이슈화 및 대중 노출 극대화'는 기획, 하단 '약 2,000명 관람·긍정적인 반응 多'는 사후.",
+          "decision": "기획 분류, 역주행_기대 근거는 상단 목적에서만 채택"
+        },
+        {
+          "page": "everlasting/kihoek p02 / report p04 (Ever/Last 컨셉)",
+          "reason": "Last 컨셉의 '차분한 톤·시간의 흐름' 정서가 이별_감성으로 보일 수 있으나, 앨범 핵심 메시지는 '변치 않음·영원'이라 이별 이입은 부차적.",
+          "decision": "이별_감성 level=low로 약하게 부여"
+        },
+        {
+          "page": "everlasting/report p18~p19, p21~p25, p27~p32 (프로모션·마케팅)",
+          "reason": "광고·바이럴·플레이리스트·팬 이벤트 등 회사 관점 노출 전략. 1인칭 체험 표현은 없으나 신규_유입·역주행_기대로 변환 검토 결과 음원 유입·대중 이슈화 전략으로 근거 채택 가능.",
+          "decision": "신규_유입·역주행_기대 medium 부여(대표 근거는 p26·p20 상단 목적 사용)"
+        },
+        {
+          "page": "everlasting/report p33~p37 원본 vs 세부",
+          "reason": "종합 결과 보고서는 전부 사후 통계이나, p34 하단 '목표 수치'는 발매 전 설정된 기획 KPI일 수 있음.",
+          "decision": "페이지 전체 맥락이 결과 통계(증감 평가)이므로 사후로 처리, 의도 근거 미사용"
+        }
+      ]
+    }
+  }
+}
