@@ -1,0 +1,184 @@
+# 기획 의도 — Everlasting (2025 정규 2집)
+# 합성 출처: _extract_everlasting_kihoek.json + _extract_everlasting_report.json (검증 통과 항목만)
+# 누수 방지: 발매보고서 사후 섹션(주요반응·성과) 제외, 검증 플래그 항목 제거/교정
+release: everlasting
+album_title: "Everlasting (정규 2집)"
+release_date: "2025-05-28"
+source_docs:
+  - "(수정1)[음악사업2본부] NF_정규2집_컨셉기획안_250516.pdf"
+  - "☆[음악사업2본부] 엔플라잉 정규 2집 'Everlasting' 발매보고서_0911.pdf (기획 섹션만)"
+
+core_intent: >
+  데뷔 10주년·공백기 이후 5인 완전체 컴백 정규앨범. '영원(변치 않음)'을 주제로
+  한 음악·키 비주얼로 그룹 아이덴티티를 강화하고, 팬덤 엔피아에게 변치 않는
+  영원함을 약속하는 낭만적 메시지를 전달하며, 기존의 유쾌함을 넘어
+  '믿고 듣는' 실력파 밴드로의 도약과 성숙한 음악적 성장을 각인시킨다.
+
+concept_axes:
+  - axis_id: eternity_promise
+    name: 영원·변치 않음의 약속
+    description: 앨범명 Everlasting의 핵심 컨셉. 시간이 흘러도 변하지 않는 영원한 가치, 시들지 않는 얼음꽃 소품 등으로 '영원'을 연출.
+    evidence: {doc: 발매보고서, page: 5, quote: "'영원한', '변치 않는'을 의미하는 앨범명"}
+    keywords: [영원, 영원히, 변치 않, 변하지 않, 에버래스팅, Everlasting, 만년설, 영원하자, 평생, 약속, 한결같, 얼음꽃]
+    asset_scope: [album, MV, lyrics, concept_photo, teaser, promotion]
+  - axis_id: npia_fandom_promise
+    name: 엔피아를 향한 낭만적 약속
+    description: 팬덤 엔피아에게 변치 않는 영원함을 약속하겠다는 낭만적 메시지가 앨범의 중심 의도.
+    evidence: {doc: 컨셉기획안, page: 3, quote: "엔피아에게 변치 않는 영원함을 약속하겠다는 낭만적인 메시지 전달"}
+    keywords: [엔피아, 팬, 우리, 함께하자, 약속해, 고마워, 사랑해, 평생 팬, 의리, 늘 함께]
+    asset_scope: [album, promotion, lyrics, concept_photo]
+  - axis_id: tenth_anniversary_next10
+    name: 10주년과 넥스트 10년
+    description: 5명이 함께해 온 데뷔 10년을 기념하고 다음 10년의 출발점으로 삼는 축. 5개의 원이 하나로 완성되는 10주년 로고 활용.
+    evidence: {doc: 발매보고서, page: 3, quote: "5명이 함께해 온 10년, 그리고 엔플라잉의 넥스트 10년"}
+    keywords: [10주년, 십주년, 데뷔 10년, 넥스트 10년, 10년째, 완전체, 다섯, 장수밴드, 축하]
+    asset_scope: [album, concept_photo, promotion, live]
+  - axis_id: trusted_band_musicianship
+    name: 믿고 듣는 실력파 밴드
+    description: 기존의 유쾌함과 공감을 넘어 '믿고 듣는' 실력파 밴드로 도약, 성숙한 음악과 아티스트적 성장 각인.
+    evidence: {doc: 발매보고서, page: 3, quote: "10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인"}
+    keywords: [믿듣, 믿고 듣는, 실력파, 밴드, 라이브 맛집, 연주, 합주, 보컬, 명곡, 성숙, 사운드, 편곡]
+    asset_scope: [album, sound, live, promotion]
+  - axis_id: time_youth_retrospect
+    name: 시간·청춘 회고
+    description: 흐르는 시간 속 청춘이 깃든 그때의 우리를 돌아보고, 지나온 시간을 되새기며 다가올 내일을 그려보는 회고적 정서.
+    evidence: {doc: 컨셉기획안, page: 3, quote: "흐르는 시간속에서 청춘이 깃든 그때의 우리를 돌아보기도 하고"}
+    keywords: [청춘, 시간, 세월, 추억, 그때, 회상, 낭만, 돌아보, 그 시절, 지나온]
+    asset_scope: [album, concept_photo, MV, lyrics]
+  - axis_id: ever_warm_serenity
+    name: "Ever 버전: 늦봄 햇살의 따뜻한 방"
+    description: Ever(언제나·항상) 컨셉포토 — 늦봄의 따스한 햇살이 스며드는 방 안에서 낭만이 된 순간을 회상하는 따뜻하고 평온한 서정 무드.
+    evidence: {doc: 컨셉기획안, page: 4, quote: "늦봄의 따스한 햇살이 창가를 타고 방 안으로 스며든다"}
+    keywords: [따뜻, 포근, 햇살, 늦봄, 평온, 서정, 잔잔, 창가, 방 안, 몽글, 아련]
+    asset_scope: [concept_photo, teaser, album]
+  - axis_id: last_dawn_blue
+    name: "Last 버전: 새벽 여명의 푸른 모노톤"
+    description: Last(지난·마지막으로) 컨셉포토 — 긴 밤이 지나고 새벽빛이 새로운 희망을 밝히는 푸르스름한 모노톤·러프한 공간.
+    evidence: {doc: 컨셉기획안, page: 7, quote: "긴 밤이 지나고, 새벽빛이 새로운 희망을 밝힌다"}
+    keywords: [새벽, 여명, 푸른, 블루, 모노톤, 어둠, 희망, 빈티지, 시크, 몽환, 쿨톤]
+    asset_scope: [concept_photo, teaser, album]
+  - axis_id: boy_narrative_mv
+    name: 소년 서사 MV·만년설 상징
+    description: 소년 배우 주연의 한 사람 서사 스토리텔링 MV. 몇 번의 계절이 흘러도 변하지 않는 메시지를 담백하게 전달, 지붕 위 쌓인 눈으로 '만년설' 상징. (검증 반영 — 인용을 BACKGROUND 문장으로 교체)
+    evidence: {doc: 컨셉기획안, page: 11, quote: "소년 배우 주연으로 스토리텔링. 한 사람의 서사 위주로"}
+    keywords: [소년, 배우, 만년설, 눈, 설원, 계절, 뮤비 해석, 스토리, 영화 같, 순수, 서사, 여운]
+    asset_scope: [MV, teaser, lyrics]
+  - axis_id: mature_suit_film_aesthetic
+    name: 성숙한 수트핏·필름 비주얼
+    description: 성숙한 수트핏과 필름 사진을 활용한 사전 프로모션 이미지로 '영원이라는 낭만'을 시각화한 성숙·우아한 비주얼 톤 구축.
+    evidence: {doc: 발매보고서, page: 3, quote: "성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지"}
+    keywords: [수트, 정장, 수트핏, 슈트, 필름, 화보, 비주얼, 우아, 성숙, 잘생]
+    asset_scope: [concept_photo, teaser, promotion, MV]
+  - axis_id: band_live_busking_promo
+    name: 버스킹·합주 라이브 전면화
+    description: 북서울 꿈의숲 버스킹 스페셜 라이브, 합주실·악기별 숏폼 등 밴드 라이브 강점을 전면에 내세워 발매 이슈화와 대중 노출 극대화.
+    evidence: {doc: 발매보고서, page: 20, quote: "오프라인 공연을 통한 발매 관련 이슈화 및 대중 노출 극대화"}
+    keywords: [버스킹, 꿈의숲, 라이브, 합주, 악기, 직캠, 무대, 현장]
+    asset_scope: [live, promotion, sound]
+
+intended_label_profile:
+  음악성: {level: high, rationale: "'믿고 듣는 실력파 밴드 도약'이 음악적 방향성의 핵심, 합주실·악기 숏폼으로 연주 실력 전면화", evidence: {doc: 발매보고서, page: 3, quote: "10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인"}}
+  감성: {level: high, rationale: "낭만적 메시지·서정적 무드·따뜻하고 평온한 톤앤매너가 앨범·컨셉포토·MV 전반의 의도", evidence: {doc: 발매보고서, page: 4, quote: "따뜻하고 평온한 톤앤매너와 서정적인 무드"}}
+  응원: {level: high, rationale: "10주년 기념 + '영원' 메시지로 그룹/팬덤 결속 강화를 명시적 기획 목표로 설정", evidence: {doc: 발매보고서, page: 3, quote: "변치 않는 '영원'의 메시지를 전달하며 그룹/팬덤 결속 강화"}}
+  입덕: {level: medium, rationale: "대학 축제 찌라시 포스터·옥외광고·버스킹으로 대중 흥미 유도와 신규 유입을 명시적으로 기획", evidence: {doc: 발매보고서, page: 21, quote: "찌라시 포스터 부착하여 대중 흥미 유도 및 아티스트 발매 이슈화"}}
+  재방문: {level: medium, rationale: "타이틀곡 200회 이상 스트리밍 인증 이벤트로 반복 청취를 직접 유도 (검증 반영: 인용을 원문대로 교정)", evidence: {doc: 발매보고서, page: 30, quote: "참여 기간 내 멜론을 통해 타이틀 곡 200회 이상 진행"}}
+  섹시: {level: low, rationale: "성숙한 수트핏·필름 화보 비주얼이 비주얼 매력 반응을 간접 겨냥 (직접 명시는 없어 low)", evidence: {doc: 발매보고서, page: 3, quote: "성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지"}}
+  유머: {level: none, rationale: "검증 결과 유머 근거(p26 챌린지 수량)는 사후 집계라 누수 판정, 제외 — 기존 유쾌함을 '넘어선다'는 서술이 오히려 탈유머 방향", evidence: null}
+  청량: {level: none, rationale: "문서 내 근거 없음 — 차분한 톤앤매너 지향", evidence: null}
+  귀여움: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  역주행: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  부정: {level: none, rationale: "의도된 반응 아님 (MV 멤버 부재 연출은 리스크로 인지되지 않았음)", evidence: null}
+  기타: {level: none, rationale: "분석 외 라벨", evidence: null}
+
+visual_direction:
+  mood: [영원이라는 낭만의 시각화, 따뜻하고 평온한 서정(Ever), 푸르스름한 모노톤(Last), 담백하고 아름다운 이미지(MV), 성숙·우아]
+  colors: [웜 화이트·아이보리(늦봄 햇살), 푸른 블루 모노톤(새벽), 라이트 블루(키 컬러), 필름 톤]
+  props: [수트, 필름 사진, 시들지 않는 얼음꽃, 빈티지 가구, 지붕 위 눈(만년설), 10주년 로고(5개의 원)]
+
+target_outcomes:
+  - "'영원' 메시지를 통한 그룹/팬덤 결속 강화"
+  - "'믿고 듣는' 실력파 밴드 이미지 도약·성숙한 성장 각인"
+  - 오프라인 공연·옥외광고로 발매 이슈화·대중 노출 극대화, 신규 음원 유입
+  - Ever/Last 대비 컨셉포토 2종으로 서정·무드 양면 매력 제시
+  - 포토북 A/B·디지팩·PLVE 4종 버전으로 팬덤 수집·구매 유도
+
+risk_notes:
+  - "MV 제작: 외부 업체 비용 효율 집행, 렌더링 화소 저하 이슈 (발매보고서 p9)"
+  - "컨셉포토: 일부 컷 누락·초점 불량으로 후반 보정 필요 (발매보고서 p12)"
+
+extraction_audit:
+  excluded_reaction_pages: {컨셉기획안: [], 발매보고서: [8, 10, 11, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 36, 37]}
+  dropped_by_verification:
+    - "label 유머(발매보고서 p26 근거) — 사후 운영 집계 + 유머 근거 부재로 제외"
+    - "label 재방문(컨셉기획안 p4 근거) — 역끼워맞춤 의심으로 제외, 발매보고서 p30 이벤트 설계 근거로 대체"
+    - "axis boy_narrative_mv 인용 — 만년설 문장에서 BACKGROUND 소년 서사 문장으로 교체"
+    - "label 재방문 인용 '음원을 통해' → 원문 '멜론을 통해'로 교정"
+
+
+# === intended_label_profile_12 — 12 반응라벨 의도 프로파일 (Gap cosine용, 2026-06 재투영) ===
+# 원본 위 구조 전부 보존. concept_axes 근거로 옛 profile을 12라벨로 재투영.
+# zone=concept(8개)만 cosine 대상 / reaction_only(신규·장기·역주행)는 자생반응이라 제외.
+# 보정: 음악성 4중계상 방지(연주·보컬 med), negane 밴드 med. level→score: high=1.0 med=0.6 low=0.3 none=0
+intended_label_profile_12:
+  밴드_정체성:
+    level: high
+    zone: concept
+    basis: concept_axis trusted_band_musicianship + band_live_busking_promo + tenth_anniversary_next10; 옛 음악성(high)
+    evidence: 발매보고서 p3 '10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인'; p3 '5명이 함께해 온 10년, 그리고 엔플라잉의 넥스트 10년' / core_intent ''믿고 듣는' 실력파 밴드로의 도약'
+  연주_악기:
+    level: med
+    zone: concept
+    basis: concept_axis band_live_busking_promo (악기별 숏폼·합주실·버스킹); trusted_band_musicianship 키워드(연주·합주·악기)
+    evidence: '발매보고서 p20 ''오프라인 공연을 통한 발매 관련 이슈화 및 대중 노출 극대화'' (axis keywords: 버스킹, 합주, 악기, 직캠)'
+  보컬_라이브:
+    level: med
+    zone: concept
+    basis: concept_axis trusted_band_musicianship(보컬·라이브 맛집 키워드) + band_live_busking_promo(라이브·무대); 연주 대비 보컬 전면화는 약해 med
+    evidence: '발매보고서 p3 ''성숙한 음악과 아티스트적 성장 각인'' (axis keywords: 라이브 맛집, 보컬); p20 버스킹 스페셜 라이브'
+  음악성:
+    level: high
+    zone: concept
+    basis: 옛 음악성(high) + concept_axis trusted_band_musicianship(성숙·사운드·편곡·명곡)
+    evidence: 발매보고서 p3 '10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인'
+  비주얼_멤버매력:
+    level: med
+    zone: concept
+    basis: concept_axis mature_suit_film_aesthetic(성숙 수트핏·필름 화보·우아·잘생); 옛 섹시(low)를 axis 근거로 상향
+    evidence: 발매보고서 p3 '성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지'
+  이별_감성:
+    level: low
+    zone: concept
+    basis: concept_axis time_youth_retrospect(회고·아련·지나온) + last_dawn_blue(긴 밤·어둠·새벽); 상실·이별 정서는 회고적 아련함 수준이라 low
+    evidence: 컨셉기획안 p3 '흐르는 시간속에서 청춘이 깃든 그때의 우리를 돌아보기도 하고'; 컨셉기획안 p7 '긴 밤이 지나고, 새벽빛이 새로운 희망을 밝힌다'
+  위로_공감:
+    level: high
+    zone: concept
+    basis: concept_axis ever_warm_serenity(따뜻·포근·평온·서정) + npia_fandom_promise(낭만적 위로 약속); 옛 감성(high)
+    evidence: 발매보고서 p4 '따뜻하고 평온한 톤앤매너와 서정적인 무드'; 컨셉기획안 p4 '늦봄의 따스한 햇살이 창가를 타고 방 안으로 스며든다'
+  청량_여름:
+    level: none
+    zone: concept
+    basis: 옛 청량(none); concept_axes에 청량/여름 근거 없음(차분한 톤앤매너, 늦봄 웜톤·새벽 쿨톤)
+    evidence: intended_label_profile 청량 '문서 내 근거 없음 — 차분한 톤앤매너 지향'
+  신규_유입:
+    level: med
+    zone: reaction_only
+    basis: 옛 입덕(medium); concept_axis band_live_busking_promo(대중 노출 극대화) + 찌라시·옥외광고 기획
+    evidence: 발매보고서 p21 '찌라시 포스터 부착하여 대중 흥미 유도 및 아티스트 발매 이슈화'
+  장기_팬덤:
+    level: high
+    zone: reaction_only
+    basis: concept_axis npia_fandom_promise(평생 약속·늘 함께) + eternity_promise(영원·평생) + tenth_anniversary; 옛 응원(high)·재방문(med) 통합
+    evidence: 컨셉기획안 p3 '엔피아에게 변치 않는 영원함을 약속하겠다는 낭만적인 메시지 전달'; 발매보고서 p3 '변치 않는 '영원'의 메시지를 전달하며 그룹/팬덤 결속 강화'
+  역주행_기대:
+    level: none
+    zone: reaction_only
+    basis: 옛 역주행(none); concept_axes에 역주행 근거 없음
+    evidence: intended_label_profile 역주행 '문서 내 근거 없음'
+unmapped_intent_12:
+- '유머: 옛 유머는 none이며 기획이 ''기존의 유쾌함을 넘어선다''는 탈유머 방향(발매보고서 p26 챌린지 근거는 누수로 제외) — 12라벨에 의도적 대응 없음'
+- '상징 해석 기대: ''만년설''(지붕 위 눈)·시들지 않는 얼음꽃·5개의 원(10주년 로고) 등 영원 상징을 해석시키려는 의도 — 12라벨에 담기지 않음(concept_axes boy_narrative_mv, eternity_promise)'
+- '소년 서사 MV 스토리텔링·여운: 소년 배우 주연 한 사람 서사·영화 같은 스토리텔링으로 뮤비 해석·여운 유도(컨셉기획안 p11) — 비주얼/감성 어느 라벨에도 깔끔히 매핑 안 됨'
+- '티저·컨셉포토 2종(Ever/Last) 대비 무드 기대: 늦봄 웜톤 vs 새벽 쿨톤 양면 매력 제시로 티징 기대감 형성(target_outcomes) — 반응라벨 부재'
+- '수집·구매 유도: 포토북 A/B·디지팩·PLVE 4종 버전으로 팬덤 구매·소장 유도(target_outcomes) — 굿즈/구매 의도라 12 반응라벨에 없음'
+- '부정: 의도된 반응 아니나 MV 멤버 부재 연출 등 잠재 리스크는 기획상 인지되지 않음(intended_label_profile 부정 none)'

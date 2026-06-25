@@ -1,0 +1,50 @@
+{
+  "release": "negane",
+  "reaction_source": "reaction_엔플라잉_label_1000.json",
+  "n_comments": 1000,
+  "cosine_alignment": 0.5895,
+  "music_concept_gap": {
+    "보컬_라이브": {
+      "intent": 0.67,
+      "reaction": 0.062,
+      "gap": -0.608
+    },
+    "연주_악기": {
+      "intent": 1.0,
+      "reaction": 0.03,
+      "gap": -0.97
+    },
+    "이별_감성": {
+      "intent": 0.0,
+      "reaction": 0.003,
+      "gap": 0.003
+    },
+    "청량_여름": {
+      "intent": 1.0,
+      "reaction": 0.023,
+      "gap": -0.977
+    },
+    "음악성": {
+      "intent": 0.67,
+      "reaction": 0.222,
+      "gap": -0.448
+    },
+    "밴드_정체성": {
+      "intent": 1.0,
+      "reaction": 0.025,
+      "gap": -0.975
+    },
+    "위로_공감": {
+      "intent": 0.33,
+      "reaction": 0.038,
+      "gap": -0.292
+    }
+  },
+  "fan_behavior_reaction": {
+    "장기_팬덤": 0.046,
+    "신규_유입": 0.059,
+    "역주행_기대": 0.075,
+    "비주얼_멤버매력": 0.105,
+    "기타_노이즈": 0.425
+  }
+}

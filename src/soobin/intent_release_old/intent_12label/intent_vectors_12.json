@@ -1,0 +1,330 @@
+{
+ "profiles": [
+  {
+   "release": "oktapbang",
+   "profile": [
+    {
+     "label": "밴드_정체성",
+     "level": "high",
+     "basis": "concept_axes: artist_self_made + free_indie_vibe + live_band_performance / 옛 음악성(high)",
+     "evidence": "core_intent: \"기존 '아이돌 밴드' 이미지를 최소화하고 자작곡 타이틀을 어필해 '아티스트'로 포지셔닝을 전환\"; artist_self_made evidence(발매보고서 p3): \"자작곡 타이틀을 어필하여 '아티스트' 이미지로 포지셔닝\"; free_indie_vibe(기획안 p3): \"러프하고 자유로운 엔플라잉의 캐릭터를 보여주는 컨셉포토\""
+    },
+    {
+     "label": "연주_악기",
+     "level": "high",
+     "basis": "concept_axes: live_band_performance / 옛 음악성(high)",
+     "evidence": "live_band_performance(기획안 p4): \"VLIVE '루프탑 라이브' – 옥탑방 라이브\"; keywords: [라이브, 연주, 밴드, 기타, 드럼, 베이스]; visual_direction props에 '악기' 포함"
+    },
+    {
+     "label": "보컬_라이브",
+     "level": "high",
+     "basis": "concept_axes: live_band_performance / 옛 음악성(high)",
+     "evidence": "live_band_performance description: \"노래·연주 리릭비디오, 유회승 보컬 커버 채널 등 실연 중심 콘텐츠로 라이브 실력을 어필\"; keywords: [보컬, 음색, 유회승, 라이브 맛집, 커버]"
+    },
+    {
+     "label": "음악성",
+     "level": "high",
+     "basis": "옛 음악성(high) + concept_axes: artist_self_made",
+     "evidence": "intended_label_profile 음악성(high, 발매보고서 p3): \"자작곡 타이틀을 어필하여 '아티스트' 이미지로 포지셔닝\"; artist_self_made keywords: [자작곡, 작곡, 작사, 실력파, 프로듀싱]"
+    },
+    {
+     "label": "비주얼_멤버매력",
+     "level": "low",
+     "basis": "concept_axes: free_indie_vibe + sunset_window_visual / 옛 섹시·귀여움(none)",
+     "evidence": "free_indie_vibe(기획안 p3): \"러프하고 자유로운 엔플라잉의 캐릭터를 보여주는 컨셉포토\", 빈티지·힙 스타일링 의도는 있으나 옛 섹시/귀여움 모두 none(\"문서 내 근거 없음\")이라 멤버매력 어필은 약함"
+    },
+    {
+     "label": "이별_감성",
+     "level": "low",
+     "basis": "옛 감성(medium) / concept_axes: rooftop_hideout(러프한 감성)·sunset_window_visual",
+     "evidence": "옛 감성(medium, 발매보고서 p4): \"마이웨이의 러프한 감성을 강조한 네이밍\"; sunset_window_visual(발매보고서 p10): \"노을을 기다리며 시간을 보내는 멤버들의 자유로운 일상\" — 상실·이별 정서가 아닌 자유·일상 무드라 이별 정서는 약함"
+    },
+    {
+     "label": "위로_공감",
+     "level": "none",
+     "basis": "concept_axes: lyrics_projection / 옛 감성(medium)",
+     "evidence": "lyrics_projection(기획안 p5): \"옥탑방 내부 흰 벽에 프로젝터로 가사를 띄우고\" — 단 axis 주의문구·dropped_by_verification: \"axis lyrics_empathy → lyrics_projection 개명 — '공감 의도'는 문서에 없음\"이라 위로·공감 의도는 문서 무근거로 none"
+    },
+    {
+     "label": "청량_여름",
+     "level": "none",
+     "basis": "옛 청량(none)",
+     "evidence": "intended_label_profile 청량(none): \"검증 결과 문서 내 근거 없음 — '러프·자유분방'이 의도였고 청량은 사후 댓글 어휘\"; dropped_by_verification: \"label 청량 — 문서 무근거 판정으로 none 처리\""
+    },
+    {
+     "label": "신규_유입",
+     "level": "low",
+     "basis": "옛 입덕(low) / concept_axes: witty_humor_content(바이럴)",
+     "evidence": "옛 입덕(low, 기획안 p5): \"이를 컨텐츠로 촬영하여 바이럴을 진행\" — 유쾌 콘텐츠 바이럴로 신규 유입을 간접 겨냥(발매보고서 광고 근거는 사후 페이지라 제외)"
+    },
+    {
+     "label": "장기_팬덤",
+     "level": "med",
+     "basis": "옛 응원·재방문 / concept_axes: fan_intimacy",
+     "evidence": "fan_intimacy(기획안 p5): \"팬사인회 부재로 생기는 소통과 친밀감의 한계를 상쇄시키고\"; 옛 응원(medium): \"취존 그리팅 등 팬 소통·친밀감 이벤트 설계\" — 단 재방문(옛 none, 반복 소비 설계 없음)이라 high까지는 아님"
+    },
+    {
+     "label": "역주행_기대",
+     "level": "none",
+     "basis": "옛 역주행(none)",
+     "evidence": "intended_label_profile 역주행(none): \"2019 기획 시점에 역주행 의도 부재 (역주행은 2020년 사후 현상)\""
+    },
+    {
+     "label": "기타_노이즈",
+     "level": "none",
+     "basis": "옛 기타(none, 분석 제외)",
+     "evidence": "intended_label_profile 기타(none): \"분석 외 라벨\""
+    }
+   ],
+   "unmapped_intent": [
+    "유머·예능 재미 (옛 유머 high, 12라벨에 대응 없음): witty_humor_content(기획안 p2) \"새로운 정보와 소개를 제공해야 하는 규칙을 부여하여 재미요소 가미\" — 10초 인터뷰·취존 그리팅 게임형 유쾌 콘텐츠가 핵심 의도인데 반응라벨에 미연결",
+    "단계적 스포일러 티징 기대감: target_outcomes \"단계적 스포일러 티징(의상→10초 인터뷰→컨셉포토)으로 컴백 기대감 조성\" — 티징/기대 유도 의도가 12라벨에 미연결",
+    "공간 상징·정체성(옥탑방 아지트): rooftop_hideout axis \"'옥탑방=N.Flying 아지트' 정체성 공간 구축\" — 곡 제목을 공간 상징으로 해석시키려는 의도가 12라벨에 미연결",
+    "노을·창문 비주얼 모티프의 일상·힐링 무드(sunset_window_visual): '이상향·소소한 행복' 정서는 이별도 위로도 청량도 아닌 별개 무드라 미연결"
+   ]
+  },
+  {
+   "release": "negane",
+   "profile": [
+    {
+     "label": "밴드_정체성",
+     "level": "high",
+     "basis": "concept_axes:youth_band_identity (+ core_intent '청춘과 기억을 이야기하는 밴드 아이덴티티를 강화')",
+     "evidence": "발매보고서 p7 quote: '청춘과 기억을 이야기하는 밴드'; core_intent: '청춘과 기억을 이야기하는 밴드 아이덴티티를 강화한다'"
+    },
+    {
+     "label": "연주_악기",
+     "level": "high",
+     "basis": "concept_axes:whistle_pop_rock (감성적 기타 라인·휘파람·기타 리프·밴드 사운드)",
+     "evidence": "기획안 p2 quote: '감성적인 기타 라인'; axis keywords [휘파람, 휘슬, 기타, 기타 리프, 팝록, 밴드 사운드]"
+    },
+    {
+     "label": "보컬_라이브",
+     "level": "med",
+     "basis": "concept_axes:whistle_pop_rock (청량한 보컬과의 조화) — 기타/연주 대비 부차적 비중",
+     "evidence": "concept_axes whistle_pop_rock description: '미디엄 템포 팝 록과 청량한 보컬의 조화'; keywords 포함 [보컬, 음색]"
+    },
+    {
+     "label": "음악성",
+     "level": "med",
+     "basis": "옛 음악성=medium + concept_axes:whistle_pop_rock (사운드 완성 요소 전면화)",
+     "evidence": "intended_label_profile 음악성 level medium, rationale '기타 라인·휘파람·미디엄 템포 팝 록·보컬 조화 등 사운드 완성 요소를 전면에 내세움' (기획안 p2)"
+    },
+    {
+     "label": "비주얼_멤버매력",
+     "level": "med",
+     "basis": "concept_axes:seunghyub_hweseung_duo (승협·회승 듀오 케미·투샷 연출)",
+     "evidence": "발매보고서 p7 quote: '립+이미지 비디오'; axis description '스페셜클립을 승협·회승 두 멤버 중심으로 연출해 듀오 케미를 부각'; keywords [케미, 투샷, 둘이]"
+    },
+    {
+     "label": "이별_감성",
+     "level": "none",
+     "basis": "옛 감성=high이나 정서가 상실·이별이 아닌 '스며든 사랑·설렘 고백'이라 이별_감성에 대응 없음",
+     "evidence": "core_intent: '바람처럼 마음에 스며든 사랑에 대한 경쾌한 고백'; concept_axes:breeze_love_confession description '기분 좋은 설렘을 전달' — 상실·이별 정서 근거 없음"
+    },
+    {
+     "label": "위로_공감",
+     "level": "low",
+     "basis": "옛 감성=high에서 파생되나 정서가 설렘·고백 중심이고 위로·치유 의도는 명시 약함",
+     "evidence": "기획안 p2 quote: '기분 좋은 설렘'; intended_label_profile 감성 rationale '기분 좋은 설렘 전달이 앨범 소개의 핵심' — 치유·위로 명시는 없어 low"
+    },
+    {
+     "label": "청량_여름",
+     "level": "high",
+     "basis": "concept_axes:summer_sea_refresh (여름·바다 청량 무드, 문서 전반 최강 컨셉)",
+     "evidence": "발매보고서 p7 quote: '#바람 #파랑 #청량'; intended_label_profile 청량 level high rationale '문서 전반에서 가장 강하게 의도된 컨셉'"
+    },
+    {
+     "label": "신규_유입",
+     "level": "none",
+     "basis": "옛 입덕=none — 유일 근거(발매보고서 p11)가 사후 성과 페이지로 검증에서 누수 제외됨",
+     "evidence": "intended_label_profile 입덕 level none rationale '제휴 바이럴 근거(p11)가 발매 후 성과 집계 페이지라 제외'; extraction_audit excluded_reaction_pages 발매보고서 [11,12,15,16]"
+    },
+    {
+     "label": "장기_팬덤",
+     "level": "med",
+     "basis": "옛 응원=low(팬사인회·영통) + concept_axes:airdrop_mystery_teaser(추측 유도) + concert_preview_song(공연-음원 연결) 등 팬덤 결속 설계",
+     "evidence": "기획안 p5 quote: '발매 직전 팬덤 관심 붐업'; 발매보고서 p14 quote '1:1 개인 영통 멤버별 10명씩 / 대면 50명'; target_outcomes '발매 직전 팬덤 관심 붐업'"
+    },
+    {
+     "label": "역주행_기대",
+     "level": "none",
+     "basis": "옛 역주행=none — 문서 내 근거 없음",
+     "evidence": "intended_label_profile 역주행 level none rationale '문서 내 근거 없음'"
+    },
+    {
+     "label": "기타_노이즈",
+     "level": "none",
+     "basis": "분석 제외 라벨",
+     "evidence": "지시: 기타_노이즈는 none(분석 제외)"
+    }
+   ],
+   "unmapped_intent": [
+    "설렘·고백 정서(breeze_love_confession): '기분 좋은 설렘'·터지는 하트 그래픽 — 이별이 아닌 긍정적 첫사랑/설렘 정서로 12라벨(이별_감성·위로_공감) 어느 쪽에도 정확히 담기지 않음",
+    "Air Drop 곡명 미공개 티징(airdrop_mystery_teaser): 떡밥·추측·D-4 달력 포스터로 발매 직전 기대감 형성 — 티징/기대 의도가 12라벨에 미연결",
+    "승협·회승 듀오 케미 상징(seunghyub_hweseung_duo): 멤버 조합 케미 해석/투샷 케미 의도 — 비주얼_멤버매력으로 일부 흡수되나 '관계성 케미' 자체는 별도 미연결",
+    "콘서트 선공개곡 음원화(concert_preview_song): 공연-음원 연결 서사 — 라이브 경험 연계 의도가 12라벨에 미연결",
+    "프리세이브·초동 청취 유도(target_outcomes): 초동 소비 유도 프로모션 의도 — 12라벨에 대응 없음"
+   ]
+  },
+  {
+   "release": "everlasting",
+   "profile": [
+    {
+     "label": "밴드_정체성",
+     "level": "high",
+     "basis": "concept_axis trusted_band_musicianship + band_live_busking_promo + tenth_anniversary_next10; 옛 음악성(high)",
+     "evidence": "발매보고서 p3 '10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인'; p3 '5명이 함께해 온 10년, 그리고 엔플라잉의 넥스트 10년' / core_intent ''믿고 듣는' 실력파 밴드로의 도약'"
+    },
+    {
+     "label": "연주_악기",
+     "level": "high",
+     "basis": "concept_axis band_live_busking_promo (악기별 숏폼·합주실·버스킹); trusted_band_musicianship 키워드(연주·합주·악기)",
+     "evidence": "발매보고서 p20 '오프라인 공연을 통한 발매 관련 이슈화 및 대중 노출 극대화' (axis keywords: 버스킹, 합주, 악기, 직캠)"
+    },
+    {
+     "label": "보컬_라이브",
+     "level": "med",
+     "basis": "concept_axis trusted_band_musicianship(보컬·라이브 맛집 키워드) + band_live_busking_promo(라이브·무대); 연주 대비 보컬 전면화는 약해 med",
+     "evidence": "발매보고서 p3 '성숙한 음악과 아티스트적 성장 각인' (axis keywords: 라이브 맛집, 보컬); p20 버스킹 스페셜 라이브"
+    },
+    {
+     "label": "음악성",
+     "level": "high",
+     "basis": "옛 음악성(high) + concept_axis trusted_band_musicianship(성숙·사운드·편곡·명곡)",
+     "evidence": "발매보고서 p3 '10주년에 걸맞는 성숙한 음악과 아티스트적 성장 각인'"
+    },
+    {
+     "label": "비주얼_멤버매력",
+     "level": "med",
+     "basis": "concept_axis mature_suit_film_aesthetic(성숙 수트핏·필름 화보·우아·잘생); 옛 섹시(low)를 axis 근거로 상향",
+     "evidence": "발매보고서 p3 '성숙한 수트핏 및 필름 사진을 활용한 사전 프로모션 이미지'"
+    },
+    {
+     "label": "이별_감성",
+     "level": "low",
+     "basis": "concept_axis time_youth_retrospect(회고·아련·지나온) + last_dawn_blue(긴 밤·어둠·새벽); 상실·이별 정서는 회고적 아련함 수준이라 low",
+     "evidence": "컨셉기획안 p3 '흐르는 시간속에서 청춘이 깃든 그때의 우리를 돌아보기도 하고'; 컨셉기획안 p7 '긴 밤이 지나고, 새벽빛이 새로운 희망을 밝힌다'"
+    },
+    {
+     "label": "위로_공감",
+     "level": "high",
+     "basis": "concept_axis ever_warm_serenity(따뜻·포근·평온·서정) + npia_fandom_promise(낭만적 위로 약속); 옛 감성(high)",
+     "evidence": "발매보고서 p4 '따뜻하고 평온한 톤앤매너와 서정적인 무드'; 컨셉기획안 p4 '늦봄의 따스한 햇살이 창가를 타고 방 안으로 스며든다'"
+    },
+    {
+     "label": "청량_여름",
+     "level": "none",
+     "basis": "옛 청량(none); concept_axes에 청량/여름 근거 없음(차분한 톤앤매너, 늦봄 웜톤·새벽 쿨톤)",
+     "evidence": "intended_label_profile 청량 '문서 내 근거 없음 — 차분한 톤앤매너 지향'"
+    },
+    {
+     "label": "신규_유입",
+     "level": "med",
+     "basis": "옛 입덕(medium); concept_axis band_live_busking_promo(대중 노출 극대화) + 찌라시·옥외광고 기획",
+     "evidence": "발매보고서 p21 '찌라시 포스터 부착하여 대중 흥미 유도 및 아티스트 발매 이슈화'"
+    },
+    {
+     "label": "장기_팬덤",
+     "level": "high",
+     "basis": "concept_axis npia_fandom_promise(평생 약속·늘 함께) + eternity_promise(영원·평생) + tenth_anniversary; 옛 응원(high)·재방문(med) 통합",
+     "evidence": "컨셉기획안 p3 '엔피아에게 변치 않는 영원함을 약속하겠다는 낭만적인 메시지 전달'; 발매보고서 p3 '변치 않는 '영원'의 메시지를 전달하며 그룹/팬덤 결속 강화'"
+    },
+    {
+     "label": "역주행_기대",
+     "level": "none",
+     "basis": "옛 역주행(none); concept_axes에 역주행 근거 없음",
+     "evidence": "intended_label_profile 역주행 '문서 내 근거 없음'"
+    },
+    {
+     "label": "기타_노이즈",
+     "level": "none",
+     "basis": "분석 제외 라벨",
+     "evidence": "intended_label_profile 기타 '분석 외 라벨'"
+    }
+   ],
+   "unmapped_intent": [
+    "유머: 옛 유머는 none이며 기획이 '기존의 유쾌함을 넘어선다'는 탈유머 방향(발매보고서 p26 챌린지 근거는 누수로 제외) — 12라벨에 의도적 대응 없음",
+    "상징 해석 기대: '만년설'(지붕 위 눈)·시들지 않는 얼음꽃·5개의 원(10주년 로고) 등 영원 상징을 해석시키려는 의도 — 12라벨에 담기지 않음(concept_axes boy_narrative_mv, eternity_promise)",
+    "소년 서사 MV 스토리텔링·여운: 소년 배우 주연 한 사람 서사·영화 같은 스토리텔링으로 뮤비 해석·여운 유도(컨셉기획안 p11) — 비주얼/감성 어느 라벨에도 깔끔히 매핑 안 됨",
+    "티저·컨셉포토 2종(Ever/Last) 대비 무드 기대: 늦봄 웜톤 vs 새벽 쿨톤 양면 매력 제시로 티징 기대감 형성(target_outcomes) — 반응라벨 부재",
+    "수집·구매 유도: 포토북 A/B·디지팩·PLVE 4종 버전으로 팬덤 구매·소장 유도(target_outcomes) — 굿즈/구매 의도라 12 반응라벨에 없음",
+    "부정: 의도된 반응 아니나 MV 멤버 부재 연출 등 잠재 리스크는 기획상 인지되지 않음(intended_label_profile 부정 none)"
+   ]
+  }
+ ],
+ "review_issues": [
+  {
+   "release": "oktapbang",
+   "label": "밴드_정체성 / 연주_악기 / 보컬_라이브 / 음악성 (4 labels all = high)",
+   "problem": "음악성=high(옛) 단일 근거가 네 라벨로 4중 계상됐다. concept_axes에서 live_band_performance 하나가 연주_악기·보컬_라이브·밴드_정체성 세 곳의 근거로 동시 인용되고, artist_self_made가 밴드_정체성·음악성 두 곳에 동시 인용된다. 재설계안(label_scheme_gap_redesign.md L51,139)은 보컬_라이브+연주_악기를 '음악_연주력' 하나로 병합했고, 밴드_에너지는 '거짓 overlap'이라 팬 반응이 음악_연주력으로 흡수된다고 명시(L73)했다. 옛 음악성 high 하나를 네 개 high로 펼치면 의도 벡터의 음악 성분이 4배 부풀어 코사인이 왜곡된다.",
+   "fix": "옥탑방 의도 근거는 자작곡 어필(artist_self_made)+라이브 실연(live_band_performance) 둘뿐이므로: 음악성=high(자작곡 포지셔닝 핵심), 연주_악기=med, 보컬_라이브=med로 낮추고, 밴드_정체성은 high가 아니라 med로 강등하거나(옥탑방 core_intent는 '인디밴드 무드'이지 '밴드 정체성 강화'가 아님 — 그건 everlasting/negane의 의도) 음악성에 흡수하라. 같은 axis가 N개 라벨에 high 근거로 재사용되는 것을 금지하고, 라벨당 고유 근거 axis를 1개씩 귀속하라."
+  },
+  {
+   "release": "oktapbang",
+   "label": "이별_감성 = low",
+   "problem": "옥탑방 옛 감성=medium이고 core_intent에 '러프한 감성'·노을 아지트 무드가 컨셉 중심이라고 명시(L70 rationale)됐는데 이별_감성=low로 깎였다. 그러나 이는 정직성 측면에선 맞다 — 옥탑방은 이별곡이 아니라 청춘 일상/힐링곡이므로 '이별' 정서가 low인 것은 옳다. 진짜 문제는 옛 감성(medium)의 정서 성분이 이별_감성·위로_공감 어느 쪽에도 제대로 안 들어가고 통째로 누락된다는 점(미연결의 sunset_window_visual '이상향·소소한 행복'이 이를 입증).",
+   "fix": "이별_감성=low는 유지하되, 옥탑방의 감성(medium)은 '이별'이 아닌 '힐링/일상 무드'이므로 컨셉무드_상징(재설계안 L90 신규 라벨)에 med로 귀속하라. rooftop_hideout '아지트 공간 상징'+sunset_window_visual '노을 일상 무드'는 컨셉무드_상징의 정의(컨셉 무드·오브제 상징 해석)에 정확히 들어맞는다 — 현재 '미연결'로 버려진 두 축이 신규 라벨의 핵심 근거다."
+  },
+  {
+   "release": "oktapbang",
+   "label": "신규_유입 = low",
+   "problem": "신규_유입은 재설계안에서 reaction_only(자생 반응) 존이고 '의도 없음(influx_awareness content=0 마케팅, 준의도축 부활 금지)'으로 명시(L102)됐다. 그런데 옥탑방 프로파일은 신규_유입=low로 의도 레벨을 부여했다 — 옛 입덕(low)+witty_humor_content(바이럴)을 근거로 든 것은 재설계안이 금지한 '준의도축 부활'에 해당한다.",
+   "fix": "신규_유입은 reaction_only 존이므로 의도 프로파일에서 0/none(또는 의도축 제외)으로 처리하라. 바이럴 유도는 프로모션 실행이지 '신규 유입 반응'에 대한 콘텐츠 의도가 아니다. 다른 두 릴리즈(negane는 신규_유입 미부여, everlasting는 med)와의 일관성도 깨진다 — 세 릴리즈 모두 reaction_only 라벨에 의도 레벨을 부여할지 말지 통일하라."
+  },
+  {
+   "release": "oktapbang",
+   "label": "미연결: 유머·예능 재미 (옛 유머 high)",
+   "problem": "옥탑방 옛 유머=high(10초 인터뷰 규칙형 콘텐츠가 core_intent의 핵심)인데 12라벨에 대응이 없어 통째 누락된다. everlasting는 유머=none(탈유머)으로 처리돼 일관성이 있으나, 옥탑방은 유머가 high인 강한 의도라 누락 시 의도 벡터의 최대 성분 중 하나가 코사인에서 빠진다 — 재설계안이 컨셉무드_상징을 '조건부 mint'한 이유(L96 '회사 최대 의도가 라벨공간에 없으면 통째 누락')와 동일한 문제가 유머에서 발생.",
+   "fix": "유머가 12라벨 체계에 없는 것은 스킴 결정이므로 라벨을 추가할 수는 없으나, 옥탑방 프로파일에 '유머=high 의도가 라벨공간 부재로 측정 불가'임을 한계로 명시하고, 코사인 산출 시 이 누락이 Gap을 과대평가시킬 수 있음을 경고로 남겨라(재설계안 L67 'intent_only floor 보류+한계명시' 패턴 적용)."
+  },
+  {
+   "release": "negane",
+   "label": "밴드_정체성 = high",
+   "problem": "negane 옛 음악성=medium에 불과하고, core_intent의 1순위는 '여름 청량 무드'+'설렘 고백'이지 밴드 정체성이 아니다. youth_band_identity는 발매보고서 p7 '청춘과 기억을 이야기하는 밴드' 한 문장 근거뿐인데 밴드_정체성=high로 올렸다. 같은 릴리즈 음악성=med, 보컬_라이브=med인데 밴드_정체성만 high인 것은 근거 대비 과평가다.",
+   "fix": "밴드_정체성=med로 강등하라. negane는 디지털 싱글 청량곡이지 밴드 정체성 강화가 메인 의도가 아니다(그건 everlasting의 10주년 컨셉). high를 줄 만한 근거는 청량_여름=high(summer_sea_refresh, 문서 전반 최강 — 이건 올바름)뿐이다."
+  },
+  {
+   "release": "negane",
+   "label": "위로_공감 = low / 이별_감성 (부재)",
+   "problem": "negane 옛 감성=high인데 정서가 '설렘·고백'(breeze_love_confession)이라 이별_감성에도 위로_공감에도 안 맞는다. 프로파일은 위로_공감=low로 옛 감성 high의 대부분을 버렸다 — 미연결 노트도 이를 인정. 즉 negane의 최강 정서 의도(설렘=high)가 12라벨에서 거의 통째 누락돼 의도 벡터가 왜곡된다.",
+   "fix": "설렘·고백 정서는 컨셉무드_상징의 '컨셉 무드 몰입'에 med~high로 귀속하는 것이 이별/위로에 억지로 넣는 것보다 정직하다(breeze_love_confession의 '터지는 하트 그래픽'은 오브제 상징에 해당). 위로_공감=low로 옛 감성 high를 흡수했다고 처리하지 말고, '설렘'은 위로가 아님을 명시하고 컨셉무드_상징으로 재귀속하라."
+  },
+  {
+   "release": "negane",
+   "label": "청량_여름 = high (dormant 존 처리 누락 위험)",
+   "problem": "청량_여름=high 자체는 옳다(negane 옛 청량=high, 문서 최강). 다만 재설계안(L40,108)은 청량_여름을 '환절기에선 dormant, negane 등에선 overlap으로 active'하는 릴리즈별 active/dormant 플래그 라벨로 정의했다. negane 프로파일에 active 플래그 명시가 없어, 환절기 Gap 코사인과 같은 차원에서 비교될 때 dormant 처리가 누락될 위험이 있다.",
+   "fix": "negane 청량_여름=high에 'active(릴리즈 활성축)' 플래그를 명시하라. config/labels.py의 릴리즈별 active/dormant 플래그(재설계안 L110)와 정합되도록 각 intent YAML에 dormant 여부를 기록하라."
+  },
+  {
+   "release": "everlasting",
+   "label": "장기_팬덤 = high (재방문 흡수 처리)",
+   "problem": "everlasting 옛 응원=high+재방문=med를 장기_팬덤=high로 통합한 것은 매핑상 맞다. 그러나 근거 인용이 사후 누수 의심이다: 재방문 med의 evidence가 발매보고서 p30 '200회 스트리밍 인증 이벤트'인데, 이 YAML의 extraction_audit가 p30을 excluded_reaction_pages 목록에 포함시켰다(L110). 즉 제외 대상 페이지를 의도 근거로 인용하는 자기모순이 있다.",
+   "fix": "재방문 근거를 p30(제외 페이지)이 아닌 사전 기획 섹션 근거로 교체하거나, p30이 '사후 성과 집계'가 아니라 '사전 설계된 이벤트 기획'임을 extraction_audit에서 명확히 분리하라(현재 excluded 목록과 의도 evidence가 같은 페이지를 가리켜 누수/비누수 판정이 충돌). 장기_팬덤=high의 진짜 견고한 근거는 npia_fandom_promise+eternity_promise+tenth_anniversary(모두 사전 기획)이므로 재방문 근거 없이도 high가 성립함을 명시하면 누수 의심을 제거할 수 있다."
+  },
+  {
+   "release": "everlasting",
+   "label": "비주얼_멤버매력 = med",
+   "problem": "옛 섹시=low를 mature_suit_film_aesthetic axis 근거로 med까지 상향했는데, 옛 라벨 rationale 자체가 '직접 명시는 없어 low'라고 적시(L85)했다. 신규 라벨이라 골드=0(반응 미측정, 재설계안 L62)인 상태에서 의도 레벨을 low→med로 올린 것은 근거 대비 과평가다.",
+   "fix": "비주얼_멤버매력=low로 되돌리거나, med로 둘 경우 '의도 근거는 수트핏 비주얼이나 직접 명시 없음 + 반응 floor 미측정(골드 0)'임을 한계로 병기하라. oktapbang(섹시 none→비주얼 low)·negane(seunghyub_hweseung_duo→비주얼 med)와의 레벨 부여 기준을 통일하라 — 세 릴리즈가 '비주얼 직접 명시 없음'인데 everlasting만 med로 올린 근거가 약하다."
+  },
+  {
+   "release": "everlasting",
+   "label": "보컬_라이브 = med vs 연주_악기 = high vs 음악성 = high vs 밴드_정체성 = high",
+   "problem": "oktapbang과 동일한 4중 계상 문제. trusted_band_musicianship 단일 axis가 밴드_정체성·연주_악기·보컬_라이브·음악성 네 라벨 모두의 근거로 동시 인용된다. 옛 음악성=high 하나가 네 라벨로 분산되며 그중 셋이 high다. 재설계안은 이 넷을 음악_연주력(L51) 하나+밴드_에너지(intent_only, L73)로 정리했다.",
+   "fix": "음악성=high(성숙·실력파 도약 핵심)는 유지하되 연주_악기·보컬_라이브는 음악성과 별도 high 근거가 없으므로 med로 낮추고, 밴드_정체성은 재설계안의 '밴드_에너지=거짓 overlap, intent_only'(L73) 취급에 맞춰 high가 아닌 med로 강등하라. everlasting는 '믿고 듣는 실력파'가 음악성 라벨에 집중되어야지 네 라벨에 펼쳐지면 안 된다."
+  },
+  {
+   "release": "everlasting",
+   "label": "신규_유입 = med (reaction_only 존 위반) — 옥탑방과 불일치",
+   "problem": "신규_유입은 reaction_only 존(의도 없음, 재설계안 L102 '준의도축 부활 금지')인데 everlasting는 med 의도 레벨을 부여했다. 옥탑방도 동일하게 low를 부여했다 — 두 릴리즈 모두 reaction_only 라벨에 의도 레벨을 달았으나 negane는 안 달았다. 릴리즈 간 처리 불일치이며, 동시에 재설계안의 존 정의를 위반한다.",
+   "fix": "세 릴리즈 통일: reaction_only 라벨(신규_유입·장기_팬덤·역주행_기대)에 의도 레벨을 부여하지 않는다는 원칙을 적용하거나, 부여한다면 negane에도 적용하라. everlasting의 찌라시·옥외광고는 프로모션 실행이므로 신규_유입 '반응'의 의도가 아니라 target_outcomes의 마케팅 항목으로만 남기고, 신규_유입 라벨 자체는 none/제외 처리하는 것이 재설계안과 정합된다."
+  },
+  {
+   "release": "everlasting",
+   "label": "이별_감성 = low vs 위로_공감 = high",
+   "problem": "감성(high)을 이별_감성(low)+위로_공감(high)으로 가른 것은 방향이 맞다(everlasting는 회고적 따뜻함이지 이별곡 아님). 다만 위로_공감 정의는 재설계안에서 '곡·가사가 나를 위로·치유시켰다는 1인칭 수용'(L84)인데, everlasting의 ever_warm_serenity는 '따뜻·평온·서정 무드'이지 '1인칭 위로 수용'이 아니다. 무드를 위로_공감으로 흡수하면 컨셉무드_상징과 경계가 무너진다.",
+   "fix": "everlasting 위로_공감=high의 근거 중 ever_warm_serenity(따뜻·평온 서정 무드)는 위로_공감이 아니라 컨셉무드_상징으로 재귀속하라. 위로_공감에 남길 것은 npia_fandom_promise의 '낭만적 위로 약속'처럼 팬을 향한 위로 메시지에 한정하라. 그러면 위로_공감은 med, 컨셉무드_상징은 high가 더 정합적이다(재설계안 L94 everlasting의 mood ×21 의도가 컨셉무드_상징 근거)."
+  }
+ ]
+}
