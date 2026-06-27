@@ -1,0 +1,101 @@
+{
+  "n_comments": 4000,
+  "labels": {
+    "기타_노이즈": {
+      "top1_pct": 0.3078,
+      "top2_pct": 0.2013,
+      "top12_pct": 0.509,
+      "top1_avg_score": 0.9391,
+      "median": 0.001,
+      "above_0.1_pct": 0.3583
+    },
+    "비주얼_멤버매력": {
+      "top1_pct": 0.144,
+      "top2_pct": 0.0833,
+      "top12_pct": 0.2273,
+      "top1_avg_score": 0.9477,
+      "median": 0.0,
+      "above_0.1_pct": 0.1658
+    },
+    "장기_팬덤": {
+      "top1_pct": 0.0953,
+      "top2_pct": 0.069,
+      "top12_pct": 0.1643,
+      "top1_avg_score": 0.9349,
+      "median": 0.0,
+      "above_0.1_pct": 0.117
+    },
+    "역주행_기대": {
+      "top1_pct": 0.0522,
+      "top2_pct": 0.0377,
+      "top12_pct": 0.09,
+      "top1_avg_score": 0.9231,
+      "median": 0.0,
+      "above_0.1_pct": 0.0645
+    },
+    "보컬_라이브": {
+      "top1_pct": 0.0755,
+      "top2_pct": 0.0423,
+      "top12_pct": 0.1177,
+      "top1_avg_score": 0.9379,
+      "median": 0.0,
+      "above_0.1_pct": 0.0935
+    },
+    "신규_유입": {
+      "top1_pct": 0.0442,
+      "top2_pct": 0.0355,
+      "top12_pct": 0.0798,
+      "top1_avg_score": 0.9221,
+      "median": 0.0,
+      "above_0.1_pct": 0.0545
+    },
+    "밴드_정체성": {
+      "top1_pct": 0.0265,
+      "top2_pct": 0.0145,
+      "top12_pct": 0.041,
+      "top1_avg_score": 0.924,
+      "median": 0.0,
+      "above_0.1_pct": 0.0307
+    },
+    "위로_공감": {
+      "top1_pct": 0.0265,
+      "top2_pct": 0.0213,
+      "top12_pct": 0.0478,
+      "top1_avg_score": 0.9502,
+      "median": 0.0,
+      "above_0.1_pct": 0.035
+    },
+    "연주_악기": {
+      "top1_pct": 0.0428,
+      "top2_pct": 0.0138,
+      "top12_pct": 0.0565,
+      "top1_avg_score": 0.9623,
+      "median": 0.0,
+      "above_0.1_pct": 0.047
+    },
+    "이별_감성": {
+      "top1_pct": 0.0025,
+      "top2_pct": 0.002,
+      "top12_pct": 0.0045,
+      "top1_avg_score": 0.9453,
+      "median": 0.0,
+      "above_0.1_pct": 0.0027
+    },
+    "청량_여름": {
+      "top1_pct": 0.0423,
+      "top2_pct": 0.0467,
+      "top12_pct": 0.089,
+      "top1_avg_score": 0.9586,
+      "median": 0.0,
+      "above_0.1_pct": 0.0495
+    },
+    "음악성": {
+      "top1_pct": 0.1405,
+      "top2_pct": 0.4328,
+      "top12_pct": 0.5733,
+      "top1_avg_score": 0.9207,
+      "median": 0.0002,
+      "above_0.1_pct": 0.1812
+    }
+  }
+}

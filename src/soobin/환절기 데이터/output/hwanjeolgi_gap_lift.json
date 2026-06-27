@@ -1,0 +1,78 @@
+{
+  "release": "환절기",
+  "method": "sigmoid_0.80_8label",
+  "intent": {
+    "청량_여름": "high",
+    "밴드_정체성": "high",
+    "위로_공감": "med"
+  },
+  "gap_scalar": 0.6667,
+  "n_success": 1,
+  "n_intended": 3,
+  "labels": {
+    "비주얼_멤버매력": {
+      "baseline": 0.1743,
+      "hwanjeolgi": 0.2558,
+      "lift": 1.468,
+      "log2_lift": 0.553,
+      "intent": "none",
+      "verdict": "  보통"
+    },
+    "보컬_라이브": {
+      "baseline": 0.1282,
+      "hwanjeolgi": 0.1485,
+      "lift": 1.158,
+      "log2_lift": 0.212,
+      "intent": "none",
+      "verdict": "  보통"
+    },
+    "밴드_정체성": {
+      "baseline": 0.061,
+      "hwanjeolgi": 0.0592,
+      "lift": 0.97,
+      "log2_lift": -0.043,
+      "intent": "high",
+      "verdict": "🔴 누수"
+    },
+    "위로_공감": {
+      "baseline": 0.0973,
+      "hwanjeolgi": 0.0547,
+      "lift": 0.562,
+      "log2_lift": -0.831,
+      "intent": "med",
+      "verdict": "🔴 누수"
+    },
+    "연주_악기": {
+      "baseline": 0.0469,
+      "hwanjeolgi": 0.0808,
+      "lift": 1.723,
+      "log2_lift": 0.785,
+      "intent": "none",
+      "verdict": "🟡 자생"
+    },
+    "이별_감성": {
+      "baseline": 0.0117,
+      "hwanjeolgi": 0.0045,
+      "lift": 0.385,
+      "log2_lift": -1.379,
+      "intent": "none",
+      "verdict": "  낮음"
+    },
+    "청량_여름": {
+      "baseline": 0.0615,
+      "hwanjeolgi": 0.0828,
+      "lift": 1.346,
+      "log2_lift": 0.429,
+      "intent": "high",
+      "verdict": "✅ 정렬"
+    },
+    "음악성": {
+      "baseline": 0.419,
+      "hwanjeolgi": 0.3137,
+      "lift": 0.749,
+      "log2_lift": -0.418,
+      "intent": "none",
+      "verdict": "  낮음"
+    }
+  }
+}
