@@ -1,0 +1,12 @@
+모델 로드 완료 (cuda:1)
+전체 6,063 → 한국어 4,000개
+
+  64 / 4,000
+  704 / 4,000
+  1,344 / 4,000
+  1,984 / 4,000
+  2,624 / 4,000
+  3,264 / 4,000
+  3,904 / 4,000
+
+✓ 환절기 데이터/output/comments_nflying_hwanjeolgi_test_before_excl_killingvoice_2026-06-26_me5_softmax.jsonl 저장 완료

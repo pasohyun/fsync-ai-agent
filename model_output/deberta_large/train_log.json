@@ -1,0 +1,11 @@
+{
+  "model": "microsoft/deberta-v3-large",
+  "best_micro_f1": 0.7213,
+  "epochs": [
+    {"epoch": 1, "train_loss": 0.8616, "val_micro_f1": 0.5333, "val_macro_f1": 0.4837, "is_best": true},
+    {"epoch": 2, "train_loss": 0.3268, "val_micro_f1": 0.6353, "val_macro_f1": 0.5766, "is_best": true},
+    {"epoch": 3, "train_loss": 0.2033, "val_micro_f1": 0.6627, "val_macro_f1": 0.6188, "is_best": true},
+    {"epoch": 4, "train_loss": 0.1238, "val_micro_f1": 0.7049, "val_macro_f1": 0.6590, "is_best": true},
+    {"epoch": 5, "train_loss": 0.0848, "val_micro_f1": 0.7213, "val_macro_f1": 0.6746, "is_best": true}
+  ]
+}

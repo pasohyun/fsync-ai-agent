@@ -1,0 +1,159 @@
+# 기획 의도 — 네가 내 마음에 자리 잡았다 (2024 디지털 싱글)
+# 합성 출처: _extract_negane_kihoek.json + _extract_negane_report.json (검증 통과 항목만)
+# 누수 방지: 발매보고서 p11~12, 15~16(사후 성과 섹션) 및 사후 인용 기반 항목 제외
+release: negane
+album_title: "네가 내 마음에 자리 잡았다 (Into You)"
+release_date: "2024-06-25"
+source_docs:
+  - "[음악사업2본부] NF_2024DS_네가내맘에자리잡았다_기획안_240618.pdf"
+  - "[음악사업2본부] NF_2024DS_네가 내 마음에 자리 잡았다_발매보고서_240822(최종).pdf (기획 섹션만)"
+
+core_intent: >
+  어느 날 바람처럼 마음에 스며든 사랑에 대한 경쾌한 고백으로 '기분 좋은 설렘'을
+  전하는 여름 시즌 디지털 싱글. 바다 배경 스페셜클립으로 여름 낮 청춘·청량 무드를
+  표현하고, 청춘과 기억을 이야기하는 밴드 아이덴티티를 강화한다.
+
+concept_axes:
+  - axis_id: summer_sea_refresh
+    name: 여름·바다 청량 무드
+    description: "시원한 곡의 계절감을 반영한 바다 배경 비주얼로 여름 낮 청춘·청량 무드를 표현. 해시태그 '#바람 #파랑 #청량'으로 명시."
+    evidence: {doc: 발매보고서, page: 7, quote: "#바람 #파랑 #청량"}
+    keywords: [청량, 시원, 여름, 바다, 파랑, 바닷바람, 여름노래, 포카리, 요트, 해변, 여행]
+    asset_scope: [MV, concept_photo, album, teaser]
+  - axis_id: breeze_love_confession
+    name: 바람처럼 스며든 사랑·설렘 고백
+    description: 바람처럼 마음에 스며든 사랑의 경쾌한 고백으로 기분 좋은 설렘을 전달. 터지는 하트 그래픽 커버 아트워크로 시각화.
+    evidence: {doc: 기획안, page: 2, quote: "기분 좋은 설렘"}
+    keywords: [설렘, 설레, 고백, 자리 잡았다, 너내마잡, 스며들, 첫사랑, 두근, 하트, 인투유, Into You]
+    asset_scope: [lyrics, album, sound]
+  - axis_id: whistle_pop_rock
+    name: 휘파람·기타 팝록 사운드
+    description: 감성적인 기타 라인과 휘파람 소리가 돋보이는 미디엄 템포 팝 록과 청량한 보컬의 조화.
+    evidence: {doc: 기획안, page: 2, quote: "감성적인 기타 라인"}
+    keywords: [휘파람, 휘슬, 기타, 기타 리프, 보컬, 팝록, 밴드 사운드, 편곡, 음색]
+    asset_scope: [sound, lyrics]
+  - axis_id: youth_band_identity
+    name: 청춘·기억의 밴드 아이덴티티
+    description: 다양한 방식으로 청춘과 기억을 이야기하는 밴드라는 팀 아이덴티티를 이번 릴리즈로 강화.
+    evidence: {doc: 발매보고서, page: 7, quote: "청춘과 기억을 이야기하는 밴드"}
+    keywords: [청춘, 추억, 기억, 밴드, 청춘 밴드, 그 시절, 학창시절]
+    asset_scope: [album, MV, promotion]
+  - axis_id: seunghyub_hweseung_duo
+    name: 승협·회승 듀오 케미
+    description: 스페셜클립을 승협·회승 두 멤버 중심으로 연출해 듀오 케미를 부각.
+    evidence: {doc: 발매보고서, page: 7, quote: "립+이미지 비디오"}
+    keywords: [승협, 회승, 이승협, 유회승, 케미, 둘이, 듀오, 투샷]
+    asset_scope: [MV, teaser]
+  - axis_id: airdrop_mystery_teaser
+    name: Air Drop 곡명 미공개 티징
+    description: 곡명 미공개 Air Drop 컨셉 발매 포스터로 팬 추측을 유도하고, D-4 달력 포스터·온라인커버+프리세이브로 발매 직전 관심 붐업.
+    evidence: {doc: 기획안, page: 5, quote: "발매 직전 팬덤 관심 붐업"}
+    keywords: [에어드랍, Air Drop, 티저, 포스터, 곡명, 추측, 떡밥, 수락, 프리세이브]
+    asset_scope: [teaser, promotion]
+  - axis_id: concert_preview_song
+    name: 콘서트 선공개곡 음원화
+    description: 콘서트에서 선공개한 곡의 음원 발매를 예고하는 형태로 공연 경험과 음원 발매를 연결.
+    evidence: {doc: 기획안, page: 5, quote: "콘서트 선공개곡 발매 예고"}
+    keywords: [콘서트, 선공개, 선공개곡, 공연에서, 라이브로 먼저, 드디어 음원, 음원으로 나왔]
+    asset_scope: [promotion, sound]
+
+intended_label_profile:
+  청량: {level: high, rationale: "여름 낮 청춘·청량 무드, #바람 #파랑 #청량 해시태그, 청량한 보컬 — 문서 전반에서 가장 강하게 의도된 컨셉", evidence: {doc: 발매보고서, page: 7, quote: "#바람 #파랑 #청량"}}
+  감성: {level: high, rationale: "'기분 좋은 설렘' 전달이 앨범 소개의 핵심, 감성적인 기타 라인 명시", evidence: {doc: 기획안, page: 2, quote: "기분 좋은 설렘"}}
+  음악성: {level: medium, rationale: "기타 라인·휘파람·미디엄 템포 팝 록·보컬 조화 등 사운드 완성 요소를 전면에 내세움", evidence: {doc: 기획안, page: 2, quote: "감성적인 기타 라인"}}
+  응원: {level: low, rationale: "대면 팬사인회·1:1 영통 이벤트로 팬덤 결속 기획 (검증 반영: '팬덤 관심 붐업'은 프로모션 계획이지 응원 반응 의도 명시가 아니라 low)", evidence: {doc: 발매보고서, page: 14, quote: "1:1 개인 영통 멤버별 10명씩 / 대면 50명"}}
+  입덕: {level: none, rationale: "검증 결과 제휴 바이럴 근거(p11)가 발매 후 성과 집계 페이지라 제외 — 사전 근거 불충분", evidence: null}
+  섹시: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  귀여움: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  역주행: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  재방문: {level: none, rationale: "문서 내 반복 소비 유도 설계 없음", evidence: null}
+  유머: {level: none, rationale: "문서 내 근거 없음", evidence: null}
+  부정: {level: none, rationale: "의도된 반응 아님", evidence: null}
+  기타: {level: none, rationale: "분석 외 라벨", evidence: null}
+
+visual_direction:
+  mood: [청량, 여름 낮, 청춘, 밝음, 경쾌]
+  colors: [파랑(바다·하늘), 하늘색, 흰색(의상), 분홍(하트 일러스트), 파스텔 블러 톤]
+  props: [요트, 자전거, 바다, 하트 일러스트 커버, Air Drop 포스터]
+
+target_outcomes:
+  - 발매 직전 팬덤 관심 붐업 + 프리세이브로 초동 청취 유도
+  - 곡명 미공개 Air Drop 티저로 추측·기대감 형성
+  - 청춘과 기억을 이야기하는 밴드 아이덴티티 강화
+  - 콘서트 선공개곡 음원화로 공연-음원 연결
+
+risk_notes: []
+
+extraction_audit:
+  excluded_reaction_pages: {기획안: [], 발매보고서: [11, 12, 15, 16]}
+  dropped_by_verification:
+    - "label 입덕(발매보고서 p11 근거) — 발매 후 업로드 콘텐츠·조회수 성과 페이지라 누수 판정, 제외"
+    - "발매보고서 p7 해시태그 인용 '#바다' → 원문 '#바람'으로 교정"
+
+
+# === intended_label_profile_12 — 12 반응라벨 의도 프로파일 (Gap cosine용, 2026-06 재투영) ===
+# 원본 위 구조 전부 보존. concept_axes 근거로 옛 profile을 12라벨로 재투영.
+# zone=concept(8개)만 cosine 대상 / reaction_only(신규·장기·역주행)는 자생반응이라 제외.
+# 보정: 음악성 4중계상 방지(연주·보컬 med), negane 밴드 med. level→score: high=1.0 med=0.6 low=0.3 none=0
+intended_label_profile_12:
+  밴드_정체성:
+    level: med
+    zone: concept
+    basis: concept_axes:youth_band_identity (+ core_intent '청춘과 기억을 이야기하는 밴드 아이덴티티를 강화')
+    evidence: '발매보고서 p7 quote: ''청춘과 기억을 이야기하는 밴드''; core_intent: ''청춘과 기억을 이야기하는 밴드 아이덴티티를 강화한다'''
+  연주_악기:
+    level: high
+    zone: concept
+    basis: concept_axes:whistle_pop_rock (감성적 기타 라인·휘파람·기타 리프·밴드 사운드)
+    evidence: '기획안 p2 quote: ''감성적인 기타 라인''; axis keywords [휘파람, 휘슬, 기타, 기타 리프, 팝록, 밴드 사운드]'
+  보컬_라이브:
+    level: med
+    zone: concept
+    basis: concept_axes:whistle_pop_rock (청량한 보컬과의 조화) — 기타/연주 대비 부차적 비중
+    evidence: 'concept_axes whistle_pop_rock description: ''미디엄 템포 팝 록과 청량한 보컬의 조화''; keywords 포함 [보컬, 음색]'
+  음악성:
+    level: med
+    zone: concept
+    basis: 옛 음악성=medium + concept_axes:whistle_pop_rock (사운드 완성 요소 전면화)
+    evidence: intended_label_profile 음악성 level medium, rationale '기타 라인·휘파람·미디엄 템포 팝 록·보컬 조화 등 사운드 완성 요소를 전면에 내세움' (기획안 p2)
+  비주얼_멤버매력:
+    level: med
+    zone: concept
+    basis: concept_axes:seunghyub_hweseung_duo (승협·회승 듀오 케미·투샷 연출)
+    evidence: '발매보고서 p7 quote: ''립+이미지 비디오''; axis description ''스페셜클립을 승협·회승 두 멤버 중심으로 연출해 듀오 케미를 부각''; keywords [케미, 투샷, 둘이]'
+  이별_감성:
+    level: none
+    zone: concept
+    basis: 옛 감성=high이나 정서가 상실·이별이 아닌 '스며든 사랑·설렘 고백'이라 이별_감성에 대응 없음
+    evidence: 'core_intent: ''바람처럼 마음에 스며든 사랑에 대한 경쾌한 고백''; concept_axes:breeze_love_confession description ''기분 좋은 설렘을 전달'' — 상실·이별 정서 근거 없음'
+  위로_공감:
+    level: low
+    zone: concept
+    basis: 옛 감성=high에서 파생되나 정서가 설렘·고백 중심이고 위로·치유 의도는 명시 약함
+    evidence: '기획안 p2 quote: ''기분 좋은 설렘''; intended_label_profile 감성 rationale ''기분 좋은 설렘 전달이 앨범 소개의 핵심'' — 치유·위로 명시는 없어 low'
+  청량_여름:
+    level: high
+    zone: concept
+    basis: concept_axes:summer_sea_refresh (여름·바다 청량 무드, 문서 전반 최강 컨셉)
+    evidence: '발매보고서 p7 quote: ''#바람 #파랑 #청량''; intended_label_profile 청량 level high rationale ''문서 전반에서 가장 강하게 의도된 컨셉'''
+  신규_유입:
+    level: none
+    zone: reaction_only
+    basis: 옛 입덕=none — 유일 근거(발매보고서 p11)가 사후 성과 페이지로 검증에서 누수 제외됨
+    evidence: intended_label_profile 입덕 level none rationale '제휴 바이럴 근거(p11)가 발매 후 성과 집계 페이지라 제외'; extraction_audit excluded_reaction_pages 발매보고서 [11,12,15,16]
+  장기_팬덤:
+    level: med
+    zone: reaction_only
+    basis: 옛 응원=low(팬사인회·영통) + concept_axes:airdrop_mystery_teaser(추측 유도) + concert_preview_song(공연-음원 연결) 등 팬덤 결속 설계
+    evidence: '기획안 p5 quote: ''발매 직전 팬덤 관심 붐업''; 발매보고서 p14 quote ''1:1 개인 영통 멤버별 10명씩 / 대면 50명''; target_outcomes ''발매 직전 팬덤 관심 붐업'''
+  역주행_기대:
+    level: none
+    zone: reaction_only
+    basis: 옛 역주행=none — 문서 내 근거 없음
+    evidence: intended_label_profile 역주행 level none rationale '문서 내 근거 없음'
+unmapped_intent_12:
+- '설렘·고백 정서(breeze_love_confession): ''기분 좋은 설렘''·터지는 하트 그래픽 — 이별이 아닌 긍정적 첫사랑/설렘 정서로 12라벨(이별_감성·위로_공감) 어느 쪽에도 정확히 담기지 않음'
+- 'Air Drop 곡명 미공개 티징(airdrop_mystery_teaser): 떡밥·추측·D-4 달력 포스터로 발매 직전 기대감 형성 — 티징/기대 의도가 12라벨에 미연결'
+- '승협·회승 듀오 케미 상징(seunghyub_hweseung_duo): 멤버 조합 케미 해석/투샷 케미 의도 — 비주얼_멤버매력으로 일부 흡수되나 ''관계성 케미'' 자체는 별도 미연결'
+- '콘서트 선공개곡 음원화(concert_preview_song): 공연-음원 연결 서사 — 라이브 경험 연계 의도가 12라벨에 미연결'
+- '프리세이브·초동 청취 유도(target_outcomes): 초동 소비 유도 프로모션 의도 — 12라벨에 대응 없음'

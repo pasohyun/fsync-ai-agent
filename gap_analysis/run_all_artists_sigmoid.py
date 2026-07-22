@@ -1,0 +1,118 @@
+import json, re, sys, os, torch
+from pathlib import Path
+from collections import Counter
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'model_training_script'))
+import config
+from model import RoBERTaMultiLabel
+from transformers import AutoTokenizer
+
+HANGUL_RE = re.compile(r"[가-힣]")
+def is_korean(text, min_ratio=0.2):
+    if not text or len(text.strip()) < 2: return False
+    return len(HANGUL_RE.findall(text)) / len(text) >= min_ratio
+
+SRC      = Path("01_corpus/corpus_labeled_1.jsonl")
+BASE_DIR = Path("04_reaction/아티스트별")
+BASE_DIR.mkdir(parents=True, exist_ok=True)
+
+LABELS_9 = ['장기_팬덤','보컬_라이브','신규_유입','밴드_정체성','위로_공감','연주_악기','이별_감성','청량_여름','음악성']
+LABELS_8 = ['비주얼_멤버매력','보컬_라이브','밴드_정체성','위로_공감','연주_악기','이별_감성','청량_여름','음악성']
+
+ARTISTS = ['엔플라잉','QWER','CNBLUE','Day6','엑스디너리히어로즈','LUCY','FTISLAND','드래곤포니']
+
+# ── 모델 로드 ────────────────────────────────────────────────
+device     = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+model_name = 'intfloat/multilingual-e5-large'
+tokenizer  = AutoTokenizer.from_pretrained(model_name)
+model      = RoBERTaMultiLabel(model_name, config.NUM_LABELS).to(device)
+model.load_state_dict(torch.load('model_output/me5_large_v2/best_model.pt', map_location=device))
+model.eval()
+print(f"모델 로드 완료 ({device})", flush=True)
+
+# ── corpus 전체 로드 후 아티스트별 그룹 ─────────────────────
+by_artist = {a: [] for a in ARTISTS}
+with open(SRC, encoding='utf-8') as f:
+    for line in f:
+        line = line.strip()
+        if not line: continue
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        a = r.get('artist')
+        if a in by_artist:
+            by_artist[a].append(r)
+
+print({a: len(v) for a, v in by_artist.items()}, flush=True)
+
+def save_thresh(rows, label_set, out_path, thresh):
+    hits, n_hit, n_multi = [], 0, 0
+    for r in rows:
+        matched = [l for l in label_set if r['sigmoid'].get(l,0) > thresh]
+        if matched:
+            hits.extend(matched); n_hit += 1
+            if len(matched) >= 2: n_multi += 1
+    total  = len(hits); counts = Counter(hits)
+    scores = {l: round(counts.get(l,0)/total, 4) if total else 0.0 for l in label_set}
+    pcts   = {l: round(counts.get(l,0)/total*100, 2) if total else 0.0 for l in label_set}
+    result = {'method': f'sigmoid_threshold_{thresh}', 'threshold': thresh,
+              'n_total': len(rows), 'n_comments_hit': n_hit, 'n_multi_hit': n_multi,
+              'n_label_hits': total, 'labels': label_set,
+              'reaction_pct': scores, 'reaction_pct_percent': pcts,
+              'hit_counts': {l: counts.get(l,0) for l in label_set}}
+    out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+    top3 = sorted(pcts.items(), key=lambda x:-x[1])[:3]
+    print(f"  ✓ {out_path.name}  히트:{n_hit:,}  top3:{top3}", flush=True)
+
+def save_top1(rows, label_set, out_path):
+    top1s  = [max(label_set, key=lambda l: r['sigmoid'].get(l,0)) for r in rows]
+    n      = len(top1s); counts = Counter(top1s)
+    scores = {l: round(counts.get(l,0)/n, 4) if n else 0.0 for l in label_set}
+    pcts   = {l: round(counts.get(l,0)/n*100, 2) if n else 0.0 for l in label_set}
+    result = {'method': 'sigmoid_top1', 'n_total': len(rows), 'labels': label_set,
+              'reaction_pct': scores, 'reaction_pct_percent': pcts,
+              'hit_counts': {l: counts.get(l,0) for l in label_set}}
+    out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+    top3 = sorted(pcts.items(), key=lambda x:-x[1])[:3]
+    print(f"  ✓ {out_path.name}  top3:{top3}", flush=True)
+
+B = 128
+for artist in ARTISTS:
+    if artist == '엔플라잉':
+        print(f"\n[ {artist} ] 이미 완료됨, 스킵", flush=True)
+        continue
+
+    rows = by_artist[artist]
+    filtered = [r for r in rows if is_korean(r.get('text',''))]
+    print(f"\n[ {artist} ] 전체 {len(rows):,} → 한국어 {len(filtered):,}개", flush=True)
+
+    out_dir = BASE_DIR / artist
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_sig = out_dir / f"{artist}_me5_sigmoid.jsonl"
+
+    results = []
+    with open(out_sig, 'w', encoding='utf-8') as fout:
+        for i in range(0, len(filtered), B):
+            batch = [r['text'] for r in filtered[i:i+B]]
+            enc   = tokenizer(batch, max_length=config.MAX_LEN, padding=True,
+                              truncation=True, return_tensors='pt').to(device)
+            with torch.no_grad():
+                logits = model(enc['input_ids'], enc['attention_mask'])
+                sigs   = torch.sigmoid(logits).cpu().tolist()
+            for row, sig_list in zip(filtered[i:i+B], sigs):
+                sigmoid = {l: round(v, 4) for l, v in zip(config.LABELS, sig_list)}
+                rec = {'comment_id': row.get('comment_id'), 'artist': row.get('artist'),
+                       'video_type': row.get('video_type'), 'text': row['text'], 'sigmoid': sigmoid}
+                fout.write(json.dumps(rec, ensure_ascii=False) + '\n')
+                results.append(rec)
+
+    print(f"  ✓ {out_sig} ({len(results):,}개)", flush=True)
+
+    safe = artist.replace(' ', '_')
+    for label_set, tag in [(LABELS_9,'9label'), (LABELS_8,'8label')]:
+        save_thresh(results, label_set, out_dir/f"{safe}_reaction_080_{tag}.json", 0.80)
+        save_thresh(results, label_set, out_dir/f"{safe}_reaction_085_{tag}.json", 0.85)
+        save_top1  (results, label_set, out_dir/f"{safe}_reaction_top1_{tag}.json")
+
+print("\n✓ 전체 아티스트 완료", flush=True)

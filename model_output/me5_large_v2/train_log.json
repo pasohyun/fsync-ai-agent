@@ -1,0 +1,41 @@
+{
+  "model": "intfloat/multilingual-e5-large",
+  "best_micro_f1": 0.7956,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6521,
+      "val_micro_f1": 0.6476,
+      "val_macro_f1": 0.5803,
+      "is_best": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2045,
+      "val_micro_f1": 0.7337,
+      "val_macro_f1": 0.6843,
+      "is_best": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.131,
+      "val_micro_f1": 0.7783,
+      "val_macro_f1": 0.7221,
+      "is_best": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0864,
+      "val_micro_f1": 0.7822,
+      "val_macro_f1": 0.7342,
+      "is_best": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0628,
+      "val_micro_f1": 0.7956,
+      "val_macro_f1": 0.7517,
+      "is_best": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "model": "answerdotai/ModernBERT-large",
+  "best_micro_f1": 0.6969,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.1285,
+      "val_micro_f1": 0.3784,
+      "val_macro_f1": 0.3532,
+      "is_best": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4002,
+      "val_micro_f1": 0.5272,
+      "val_macro_f1": 0.508,
+      "is_best": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1862,
+      "val_micro_f1": 0.5902,
+      "val_macro_f1": 0.5646,
+      "is_best": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0948,
+      "val_micro_f1": 0.6686,
+      "val_macro_f1": 0.6293,
+      "is_best": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0455,
+      "val_micro_f1": 0.6969,
+      "val_macro_f1": 0.6427,
+      "is_best": true
+    }
+  ]
+}

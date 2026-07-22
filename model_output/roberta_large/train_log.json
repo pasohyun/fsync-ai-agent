@@ -1,0 +1,11 @@
+{
+  "model": "klue/roberta-large",
+  "best_micro_f1": 0.7385,
+  "epochs": [
+    {"epoch": 1, "train_loss": 0.6233, "val_micro_f1": 0.5595, "val_macro_f1": 0.5131, "is_best": true},
+    {"epoch": 2, "train_loss": 0.2239, "val_micro_f1": 0.6718, "val_macro_f1": 0.6041, "is_best": true},
+    {"epoch": 3, "train_loss": 0.1349, "val_micro_f1": 0.6779, "val_macro_f1": 0.6298, "is_best": true},
+    {"epoch": 4, "train_loss": 0.0840, "val_micro_f1": 0.7143, "val_macro_f1": 0.6616, "is_best": true},
+    {"epoch": 5, "train_loss": 0.0585, "val_micro_f1": 0.7385, "val_macro_f1": 0.6777, "is_best": true}
+  ]
+}
