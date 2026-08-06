@@ -1,0 +1,27 @@
+# 의도-반응 괴리도 분석 파이프라인 실행 환경
+# 검증 환경: Python 3.12 / CUDA 12.4 / venv = subinn/
+#   python -m venv subinn && source subinn/bin/activate
+#   pip install -r requirements.txt
+
+# ── 분류기 학습·추론 (model_training_script/, gap_analysis/run_*_sigmoid.py) ──
+torch==2.6.0                    # CUDA 12.4 빌드: --index-url https://download.pytorch.org/whl/cu124
+transformers==4.57.6
+sentencepiece==0.2.1            # multilingual-e5-large 토크나이저
+numpy==2.4.6
+scikit-learn==1.9.0             # eval.py micro/macro F1
+tqdm==4.67.3
+
+# ── 괴리도 산출·도면 (gap_analysis/compute_gap_lift.py, make_figures.py) ──
+matplotlib==3.11.0
+# 도면의 한글 표기를 위해 CJK 폰트 필요:
+#   sudo apt install fonts-noto-cjk     (Noto Sans CJK KR)
+
+# ── 데이터 수집·라벨링 (00_crawling/) ──
+google-api-python-client==2.197.0   # YouTube Data API v3
+openpyxl==3.1.5                     # 라벨링 시트 생성
+anthropic>=0.40                     # LLM 약지도 라벨링 / 골드셋 검증
+
+# ── 대시보드 (06_대시보드/) ──
+# 별도 환경 권장: pip install -r 06_대시보드/requirements.txt
+# streamlit>=1.50
+# pandas

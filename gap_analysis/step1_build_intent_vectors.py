@@ -12,22 +12,28 @@ FAN_BEHAVIOR_LABELS = {
 }
 
 SRC = os.path.join(os.path.dirname(__file__), "..", "02_intent", "_archive", "intent_12label", "intent_vectors_12.json")
-OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "03_doc_probs", "finetuned")
+OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "02_intent", "intent_labels")
 
 def build():
+    os.makedirs(OUT_DIR, exist_ok=True)
     with open(SRC, encoding="utf-8") as f:
         data = json.load(f)
 
     for profile in data["profiles"]:
         release = profile["release"]
         intent_scores = {}
+        intended_labels = {}
         for entry in profile["profile"]:
             label = entry["label"]
-            score = LEVEL_SCORE.get(entry["level"], 0.0)
-            intent_scores[label] = score
+            level = entry["level"]
+            intent_scores[label] = LEVEL_SCORE.get(level, 0.0)
+            # compute_gap_lift.py 가 그대로 읽는 의도 라벨 맵 (none/low 는 제외)
+            if level in ("high", "med"):
+                intended_labels[label] = level
 
         out = {
             "release": release,
+            "intended_labels": intended_labels,
             "intent_scores": intent_scores,
             "music_concept_labels": sorted(MUSIC_CONCEPT_LABELS),
             "fan_behavior_labels": sorted(FAN_BEHAVIOR_LABELS),

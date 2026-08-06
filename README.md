@@ -54,8 +54,7 @@ subin2/
 │   ├── artist_raw/                    # 아티스트별 원본 크롤링 JSONL
 │   │   ├── data_cnblue/
 │   │   ├── data_ftisland/
-│   │   ├── data_qwer/
-│   │   └── data_sexy_old/
+│   │   └── data_qwer/
 │   └── labeling_sheets/               # 팀원 라벨링 시트
 │       ├── jimin_labeling_sheet.xlsx
 │       ├── juhyeong_labeling_sheet.xlsx
@@ -64,21 +63,17 @@ subin2/
 │
 ├── 02_intent/                         # 기획서 의도 추출
 │   ├── texts/                         # 기획서 원문 TXT (8개 문서)
-│   ├── extracted/                     # 라인별 의도 추출 JSON (02_intent_extraction)
-│   └── _archive/                      # 이전 버전 의도 벡터 (YAML/JSON)
-│       ├── intent_vectors/            # 릴리즈별 intent YAML
-│       ├── intent_12label/            # 12라벨 intent_vectors_12.json
-│       └── raw/                       # 원본 PDF
-│
-├── 03_doc_probs/                      # 기획서 문서 라벨 확률
-│   ├── finetuned/                     # Fine-tuned ME5 결과 (doc_probs_line, fulltext, wo_noise)
-│   ├── puremodel/                     # Pure ME5 코사인 유사도 결과
-│   └── _archive/                      # 초기 gap report JSON
+│   ├── extracted/                     # 라인별 의도 추출 JSON
+│   ├── intent_labels/                 # ★ 의도 라벨 + 강조 강도 (설명서 5.(6) 산출물)
+│   │   └── hwanjeolgi_intent.json
+│   └── _archive/
+│       ├── intent_12label/            # 12라벨 intent_vectors_12.json (구 릴리즈 3건)
+│       └── raw/                       # 원본 PDF (사내 문서 — 외부 공유 금지)
 │
 ├── 04_reaction/                       # 댓글 반응 분석 결과
 │   ├── 환절기/                         # 엔플라잉 '환절기' 댓글 (4,000개)
-│   │   ├── output/                    # sigmoid/softmax 추론 결과 + 분포 그래프
-│   │   └── lift/                      # gap lift JSON (8label, 9label)
+│   │   ├── output/                    # sigmoid 추론 결과 + 반응 분포 JSON
+│   │   └── lift/                      # ★ 괴리도(lift) JSON (8label, 9label)
 │   ├── 전체/                           # 전체 코퍼스 반응 (107,505개)
 │   │   └── OUTPUT/                    # corpus_me5_sigmoid.jsonl + 반응파일 (7/8/9라벨)
 │   └── 아티스트별/                     # 8개 아티스트 개별 반응 파일
@@ -95,28 +90,28 @@ subin2/
 │   ├── 반응추이(일별 그래프 9개)(히트수 라벨로 그래프 그리면됨)/
 │   ├── 엔플라잉 포지셔닝(리액션퍼센트 라벨별로 비교하면됨)/
 │   ├── 의도한 메세지별 반응 강도(위로,청량,장기팬덤만 사용하면됨)/
-│   └── 워드클라우드/
+│   ├── 워드클라우드/
+│   └── 도면/                           # ★ 발명내용 설명서 도면 1·2 + 추이 그래프
 │
-├── data_script/                       # 데이터 수집·처리 스크립트
-│   ├── youtube.py                     # YouTube 댓글 크롤링
-│   ├── filter_korean.py               # 한국어 필터링
-│   ├── label_comments.py              # Claude API 자동 라벨링
-│   ├── apply_labels.py                # 수동 라벨 적용
-│   ├── crawlers/
-│   │   ├── band/Band_crawler_v1.ipynb # 밴드 크롤러
-│   │   └── hip/hip_crawler_v2.ipynb   # 힙합 크롤러
-│   └── labeling/                      # 라벨링 보조 스크립트
+├── 00_crawling/                       # 데이터 수집·라벨링 스크립트
+│   ├── youtube.py                     # YouTube 댓글 크롤링 (API 키는 환경변수)
+│   ├── filter_korean.py               # 한국어 비율 필터
+│   ├── crawlers/band/Band_crawler_v1.ipynb
+│   └── labeling/
+│       ├── merge_corpus.py            # 팀원별 코퍼스 통합·중복 제거
+│       ├── label_corpus_batch.py      # LLM 약지도 라벨링 (Batch API)
+│       ├── claude_label_gold_600.py   # 골드셋 blind 라벨링 (라벨 품질 게이트)
+│       ├── merge_gold.py              # 골드셋 병합
+│       └── make_labeling_sheet.py     # 수동 라벨링 시트 생성
 │
 ├── gap_analysis/                      # Gap 분석 파이프라인 스크립트
-│   ├── step1_build_intent_vectors.py  # 기획서 의도 → float 벡터
-│   ├── step2_build_reaction_vector.py # 댓글 반응 벡터 생성
-│   ├── step3_compute_gap.py           # Gap score 산출
-│   ├── probe_pure_me5.py              # Pure ME5 코사인 유사도 탐색
-│   ├── probe_intent_json.py           # 의도 JSON 확률 탐색
-│   ├── run_corpus_sigmoid.py          # 전체 코퍼스 sigmoid 추론
-│   ├── run_hwanjeolgi_both.py         # 환절기 sigmoid+softmax 추론
-│   ├── run_nflying_sigmoid.py         # 엔플라잉 단독 sigmoid 추론
-│   ├── run_all_artists_sigmoid.py     # 전체 아티스트 sigmoid 추론
+│   ├── run_corpus_sigmoid.py          # S140 기준선 반응 분포 (전체 코퍼스)
+│   ├── run_all_artists_sigmoid.py     # 아티스트별 반응 분포 (코호트 비교용)
+│   ├── run_nflying_sigmoid.py         # 엔플라잉 단독 반응 분포
+│   ├── run_hwanjeolgi_sigmoid.py      # ★ S150 대상 반응 분포 (환절기)
+│   ├── compute_gap_lift.py            # ★ S170 괴리도(lift) 산출·판정
+│   ├── make_figures.py                # ★ 도면 1·2 및 추이 그래프 생성
+│   ├── step1_build_intent_vectors.py  # 의도 level(high/med/low) → 점수 변환
 │   └── label_descriptions.json        # 라벨별 키워드 설명
 │
 ├── model_training_script/             # 모델 학습 파이프라인
@@ -128,15 +123,16 @@ subin2/
 │   ├── eval.py                        # 평가 (micro/macro F1)
 │   └── predict.py                     # 추론
 │
-├── model_output/                      # 모델 체크포인트
-│   ├── me5_large_v2/                  # 최종 사용 모델 ★
-│   ├── me5_large/
-│   ├── deberta_large/
+├── model_output/                      # 모델 체크포인트 · 평가 로그
+│   ├── me5_large_v2/                  # 최종 사용 모델 ★ (best_model.pt 보유)
+│   ├── me5_large/                     # 이하 모델 비교 실험 — eval 로그만 보존
+│   ├── deberta_large/                 #   (.pt 가중치는 용량 문제로 삭제)
 │   ├── modernbert_large/
 │   ├── roberta_large/
-│   └── human/                         # 휴먼 라벨 기준선
+│   └── human/
 │
 ├── subinn/                            # Python 가상환경 (git 제외)
+├── requirements.txt
 └── README.md
 ```
 
@@ -165,22 +161,35 @@ subin2/
 
 ## 실행 순서
 
+발명내용 설명서 5.의 단계 번호(S110~S170)와 대응한다.
+모든 명령은 저장소 루트에서 실행한다 (스크립트가 상대 경로를 사용).
+
 ```bash
 # 가상환경 활성화
 source subinn/bin/activate
+pip install -r requirements.txt
 
-# 1. 전체 코퍼스 sigmoid 추론 (GPU 0)
+# [S140] 기준선 반응 분포 — 8팀 전체 코퍼스 107,505건
 python gap_analysis/run_corpus_sigmoid.py
 
-# 2. 환절기 댓글 sigmoid + softmax 추론 (GPU 1)
-python gap_analysis/run_hwanjeolgi_both.py
+# [S150] 대상 반응 분포 — 환절기 릴리즈 댓글 4,000건
+python gap_analysis/run_hwanjeolgi_sigmoid.py
 
-# 3. 아티스트별 반응 파일 생성
+# 동종 코호트 포지셔닝용 — 아티스트별 반응 분포
 python gap_analysis/run_all_artists_sigmoid.py
 
-# 4. Gap 분석
-python gap_analysis/step1_build_intent_vectors.py
-python gap_analysis/step3_compute_gap.py --release hwanjeolgi
+# [S170] 괴리도(lift) 산출 — 의도 라벨은 02_intent/intent_labels/ 에서 읽음
+python gap_analysis/compute_gap_lift.py
+
+# 기존 산출물과 일치하는지 검증 (재현성 확인)
+python gap_analysis/compute_gap_lift.py \
+    --verify 04_reaction/환절기/lift/hwanjeolgi_gap_lift_080_9label.json
+
+# 도면 생성
+python gap_analysis/make_figures.py --fig 1 --fig 2 --fig trend
+
+# 대시보드
+streamlit run 06_대시보드/app.py
 ```
 
 ---
@@ -193,6 +202,12 @@ python gap_analysis/step3_compute_gap.py --release hwanjeolgi
 | 파인튜닝 버전 | me5_large_v2 |
 | max_len | 128 |
 | batch_size | 64 |
-| 추론 방식 | sigmoid (독립 이진) |
-| 반응 임계값 | 0.80 / 0.85 / top1 |
-| 분석 라벨 수 | 9라벨 (기타_노이즈·비주얼·역주행 제외) |
+| 추론 방식 | sigmoid (독립 이진, BCEWithLogitsLoss) |
+| 반응 임계값 τ | **0.80** (0.85 / top1 산출물은 파라미터 비교용) |
+| 분석 라벨 수 | **9라벨** (기타_노이즈·비주얼_멤버매력·역주행_기대 제외) |
+| 정규화 | 라벨별 히트 수 ÷ 분석 대상 라벨 전체 히트 수 |
+| 괴리도 | lift(l) = p_target(l) / p_baseline(l) — 기준선·대상 모두 동일 τ·동일 정규화 |
+
+> 기준선 분포와 대상 분포는 **동일 라벨 체계·동일 분류기·동일 임계값·동일 정규화 방식**으로
+> 산출되어야 상대 강도 대비가 성립한다. 임계값이나 라벨 집합을 바꾸면
+> `run_corpus_sigmoid.py` 와 `run_hwanjeolgi_sigmoid.py` 를 **함께** 재실행할 것.

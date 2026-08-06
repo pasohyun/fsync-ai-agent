@@ -1,10 +1,13 @@
 import json
+import os
 import re
 from datetime import datetime, timezone
 from urllib.parse import urlparse, parse_qs
 from googleapiclient.discovery import build
 
-API_KEY = "AIzaSyCwp6UDRNswiy7--lvYbllSJc615dbYh1Y"
+# YouTube Data API v3 키. 저장소에 평문으로 두지 말 것.
+# export YOUTUBE_API_KEY=... 로 주입하거나 아래에 직접 입력.
+API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 
 # ── 고정값 ────────────────────────────────────────────────────
 ARTIST = "FTISLAND"
