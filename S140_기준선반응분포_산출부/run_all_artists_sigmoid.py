@@ -2,7 +2,7 @@ import json, re, sys, os, torch
 from pathlib import Path
 from collections import Counter
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'model_training_script'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'S130_이중라벨링_분류기학습부', 'model_training_script'))
 import config
 from model import RoBERTaMultiLabel
 from transformers import AutoTokenizer
@@ -26,7 +26,7 @@ device     = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 model_name = 'intfloat/multilingual-e5-large'
 tokenizer  = AutoTokenizer.from_pretrained(model_name)
 model      = RoBERTaMultiLabel(model_name, config.NUM_LABELS).to(device)
-model.load_state_dict(torch.load('model_output/me5_large_v2/best_model.pt', map_location=device))
+model.load_state_dict(torch.load('S130_이중라벨링_분류기학습부/model_output/me5_large_v2/best_model.pt', map_location=device))
 model.eval()
 print(f"모델 로드 완료 ({device})", flush=True)
 

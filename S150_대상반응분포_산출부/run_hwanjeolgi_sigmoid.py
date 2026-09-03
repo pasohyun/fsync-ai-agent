@@ -5,14 +5,14 @@
 compute_gap_lift.py 의 상대강도(lift) 대비가 성립한다.
 
 Usage:
-  python gap_analysis/run_hwanjeolgi_sigmoid.py
-  python gap_analysis/run_hwanjeolgi_sigmoid.py --gpu 1 --batch 64
+  python S150_대상반응분포_산출부/run_hwanjeolgi_sigmoid.py
+  python S150_대상반응분포_산출부/run_hwanjeolgi_sigmoid.py --gpu 1 --batch 64
 """
 import json, re, sys, os, argparse, torch
 from pathlib import Path
 from collections import Counter
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'model_training_script'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'S130_이중라벨링_분류기학습부', 'model_training_script'))
 import config
 from model import RoBERTaMultiLabel
 from transformers import AutoTokenizer
@@ -69,7 +69,7 @@ def main():
     p.add_argument('--src', default=DEFAULT_SRC)
     p.add_argument('--outdir', default=DEFAULT_OUT)
     p.add_argument('--prefix', default='hwanjeolgi', help='출력 파일명 접두어(릴리즈 슬러그)')
-    p.add_argument('--ckpt', default='model_output/me5_large_v2/best_model.pt')
+    p.add_argument('--ckpt', default='S130_이중라벨링_분류기학습부/model_output/me5_large_v2/best_model.pt')
     p.add_argument('--model-name', default='intfloat/multilingual-e5-large')
     p.add_argument('--gpu', type=int, default=0)
     p.add_argument('--batch', type=int, default=128)

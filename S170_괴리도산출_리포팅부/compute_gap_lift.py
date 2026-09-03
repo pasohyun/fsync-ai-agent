@@ -7,18 +7,18 @@
 
 lift > 1 이면 해당 반응이 통상 수준보다 강하게 발생, 1 미만이면 통상 수준 미달.
 두 분포는 동일 라벨 체계·동일 분류기·동일 임계값·동일 정규화 방식으로 산출된
-reaction json (run_corpus_sigmoid.py / run_hwanjeolgi_sigmoid.py 출력)이어야 한다.
+reaction json (S140/run_corpus_sigmoid.py, S150/run_hwanjeolgi_sigmoid.py 출력)이어야 한다.
 
 Usage:
   # 최종본(임계값 0.80, 9라벨) 재현
-  python gap_analysis/compute_gap_lift.py
+  python S170_괴리도산출_리포팅부/compute_gap_lift.py
 
   # 기존 산출물과 일치하는지 검증
-  python gap_analysis/compute_gap_lift.py \
+  python S170_괴리도산출_리포팅부/compute_gap_lift.py \
       --verify 04_reaction/환절기/lift/hwanjeolgi_gap_lift_080_9label.json
 
   # 8라벨 변형
-  python gap_analysis/compute_gap_lift.py \
+  python S170_괴리도산출_리포팅부/compute_gap_lift.py \
       --baseline 04_reaction/전체/OUTPUT/corpus_reaction_08_8label.json \
       --target   04_reaction/환절기/output/hwanjeolgi_reaction_080_8label.json \
       --out      04_reaction/환절기/lift/hwanjeolgi_gap_lift_080_8label.json
@@ -36,11 +36,11 @@ DEFAULT_OUT      = "04_reaction/환절기/lift/hwanjeolgi_gap_lift_080_9label.js
 # 판정 경계.
 #   - 의도 라벨은 ALIGN_CUT(=1.0) 기준으로 전달/누수를 가른다 (청구항 3).
 #   - 비의도 라벨은 HIGH_CUT 이상이면 '자생' 반응으로 별도 표시한다.
-#   - LOW_CUT(0.8)은 기존 산출물에서 역산이 불가능한 구간(0.762~1.05 사이에
-#     비의도 라벨이 없음)이라 0.8로 둔다. 필요 시 --low-cut 으로 조정.
+#   - LOW_CUT(1.0)은 비의도 라벨의 '보통/낮음' 경계다. 통상 수준(lift=1.0)을
+#     기준으로 삼아 ALIGN_CUT 과 동일하게 둔다. 필요 시 --low-cut 으로 조정.
 ALIGN_CUT = 1.0
 HIGH_CUT  = 1.5
-LOW_CUT   = 0.8
+LOW_CUT   = 1.0
 
 V_ALIGN = "✅ 정렬"
 V_LEAK  = "🔴 누수"

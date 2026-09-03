@@ -5,8 +5,8 @@
   --fig trend  라벨별 일별 반응 추이 그래프 9장
 
 Usage:
-  python gap_analysis/make_figures.py --fig 1 --fig 2
-  python gap_analysis/make_figures.py --fig trend --outdir 05_최종결과/도면
+  python S170_괴리도산출_리포팅부/make_figures.py --fig 1 --fig 2
+  python S170_괴리도산출_리포팅부/make_figures.py --fig trend --outdir 05_최종결과/도면
 """
 import argparse
 import json

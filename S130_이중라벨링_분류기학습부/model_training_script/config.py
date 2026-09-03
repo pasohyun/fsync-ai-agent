@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = BASE_DIR.parent
+PROJECT_ROOT = BASE_DIR.parent.parent   # S130_.../model_training_script → S130_... → 저장소 루트
 
 LABELS = [
     "기타_노이즈",
@@ -28,7 +28,7 @@ LR = 2e-5
 WARMUP_RATIO = 0.1
 THRESHOLD = 0.5
 
-LABELED_PATH = str(PROJECT_ROOT / "corpus_labeled_1.jsonl")
+LABELED_PATH = str(PROJECT_ROOT / "01_corpus" / "corpus_labeled_1.jsonl")
 TRAIN_PATH = str(BASE_DIR / "train.jsonl")
 VAL_PATH = str(BASE_DIR / "val.jsonl")
-SAVE_PATH = str(PROJECT_ROOT / "model_output")
+SAVE_PATH = str(BASE_DIR.parent / "model_output")   # S130_.../model_output
